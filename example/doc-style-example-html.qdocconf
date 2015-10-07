@@ -1,0 +1,45 @@
+outputformats = HTML
+outputdir = html
+                     
+HTML.postheader = "\n" \
+                  "<!-- POSTHEADER -->\n" \
+                  "\n" \
+                  "<nav class='navbar navbar-default navbar-static-top'>\n" \
+                  "  <div class='container-fluid'>\n" \
+                  "    <div class='navbar-header'>\n" \
+                  "      <a class='navbar-brand' href='index.html'>Welcome</a>\n" \
+                  "    </div>\n" \
+                  "  </div>\n" \
+                  "</nav>\n" \
+                  "\n" \
+                  "<div class='container'>\n" \
+                  "  <div class='row'>\n" \
+                  "    <div class='col-lg-9 col-md-10 content-root'>\n" \
+                  "<!-- END POSTHEADER -->\n" \
+                  "\n"
+
+HTML.footer = "\n" \
+              "<!-- FOOTER -->\n" \
+              "    </div> <!-- content-root -->\n" \
+              "    <div class='col-lg-3 col-md-2 sidebar-root'>\n" \
+              "    </div> <!-- sidebar-root -->\n" \
+              "  </div> <!-- row -->\n" \
+              "</div> <!-- container-fluid -->\n" \
+              "\n" \
+              "<footer class='footer'>\n" \
+              "  <div class='container'>\n" \
+              "    <center>\n" \
+              "      <p class='text-muted'>\n" \
+              "        &copy; Robert Hildebrandt  2015\n" \
+              "        <br>\n" \
+              "        Documentation generated using the <a class='text-muted' href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.\n" \
+              "        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;\n" \
+              "        Using the <a class='text-muted' href='http://getbootstrap.com/'>Bootstrap</a> framework.\n" \
+              "        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;\n" \
+              "        Using the Bootstrap theme: <a class='text-muted' href='http://bootswatch.com/sandstone/'>sandstone</a>\n" \
+              "      </p>\n" \
+              "    </center>\n" \
+              "  </div>\n" \
+              "</footer>\n" \
+              "<!-- END FOOTER -->\n" \
+              "\n"

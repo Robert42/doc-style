@@ -1,0 +1,15 @@
+/*!
+\page index.html overview
+
+\title Welcome
+
+\raw HTML
+<div class=jumbotron>
+<h1>Welcome</h1>
+<p>
+Welcome to this callection of css-, javascript- and qdoc config files. This collection is thought to make the integration of bootstrap into a qdoc html documentation easier.
+</p>
+</div>
+\endraw
+
+*/

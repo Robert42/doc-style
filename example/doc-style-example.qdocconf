@@ -1,0 +1,11 @@
+include($DOCSTYLE_DIR/doc-style-basics.qdocconf)
+include(doc-style-example-html.qdocconf)
+
+outputformats = HTML
+outputdir = html
+
+project = doc-style
+descripton = "An example for the doc-style"
+
+sourcedirs += qdoc
+exampledirs += qdoc
