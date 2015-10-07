@@ -1,0 +1,7 @@
+sources.fileextensions += *.cpp
+sources.fileextensions += *.inl
+headers.fileextensions += *.h
+
+include(doc-style-html.qdocconf)
+
+Cpp.ignoretokens += final
