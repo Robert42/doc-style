@@ -17,4 +17,7 @@ Welcome to this callection of css-, javascript- and qdoc config files. This coll
 </div>
 \endraw
 
+
+\warning There are peaple saying, that QDoc \l{http://stackoverflow.com/a/3059120/2301866}{is deprecated}. There are also other documentation building systems than \l{http://doc.qt.io/qt-5/qdoc-index.html}{QDoc}, like for example \l{https://de.wikipedia.org/wiki/Doxygen}{Doxygen}. If you are not really sure, you want to use qdoc instead of doxygen, I would recommend to use doxygen, as there are moe online ressources helping you to get started more easy with Doxygen than with QDoc.
+
 */
