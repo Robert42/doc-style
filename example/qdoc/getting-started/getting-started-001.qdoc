@@ -42,6 +42,9 @@ You can also use different directory structure. You just have to be consistent.
 
 
 
+\section1 Add QDoc Configuration files
+\list{1}
+\li Create a subfolder for your documentation
 \endlist
 
 */
