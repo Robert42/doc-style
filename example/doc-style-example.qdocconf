@@ -7,5 +7,4 @@ outputdir = html
 project = doc-style
 descripton = "An example for the doc-style"
 
-sourcedirs += qdoc
 exampledirs += qdoc

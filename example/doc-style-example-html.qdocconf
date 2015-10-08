@@ -1,6 +1,3 @@
-outputformats = HTML
-outputdir = html
-                     
 HTML.postheader = "\n" \
                   "<!-- POSTHEADER -->\n" \
                   "\n" \
