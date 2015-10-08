@@ -1,11 +1,9 @@
-HTML.stylesheets += style/third-party/bootswatch/bootstrap.css
 HTML.stylesheets += style/doc-style.css
 HTML.stylesheets += style/third-party/sticky-footer.css
 HTML.scripts += style/third-party/bootstrap/bootstrap.js
 HTML.scripts += style/doc-style.js
 
-HTML.headerstyles += "<link rel='stylesheet' href='./style/bootstrap.css'>\n" \
-                     "<link rel='stylesheet' href='./style/doc-style.css'>\n" \
+HTML.headerstyles += "<link rel='stylesheet' href='./style/doc-style.css'>\n" \
                      "<link rel='stylesheet' href='./style/sticky-footer.css'>\n"
 
 HTML.headerscripts += "<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>\n" \

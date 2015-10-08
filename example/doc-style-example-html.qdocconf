@@ -1,3 +1,6 @@
+HTML.stylesheets += style/third-party/bootstrap/bootstrap.css
+HTML.headerstyles += "<link rel='stylesheet' href='./style/bootstrap.css'>\n"
+
 HTML.postheader = "\n" \
                   "<!-- POSTHEADER -->\n" \
                   "\n" \
