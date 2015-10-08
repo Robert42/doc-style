@@ -1,6 +1,6 @@
 function adaptBreadcrums()
 {
-  $(".content-root>li").remove(); // Remove the leading <li>Title</li> after the <!-- END POSTHEADER --> comment automatically added by QDoc
+  $(".content-root>li").remove();
 }
 
 function removeTitle()
@@ -82,7 +82,7 @@ $(document).ready(function() {
     removeTitle();
   }else
   {
-    adaptBrief(); // Must be called bevore removing/manipulating the title
+    adaptBrief();
     adaptTitle();
     adaptSidebar();
   }
