@@ -9,6 +9,9 @@
 <p>
 Welcome to this callection of css-, javascript- and qdoc config files. This collection is thought to make the integration of bootstrap into a qdoc html documentation easier.
 </p>
+<p>
+<a class="btn btn-primary btn-lg" href="getting-started.html">Get Started</a>
+</p>
 </div>
 \endraw
 
