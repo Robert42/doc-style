@@ -1,0 +1,46 @@
+/*!
+\page getting-started-001.html
+
+\indexpage Welcome
+\startpage Getting Started
+\contentspage Getting Started
+\previouspage Getting Started
+
+\title Project Set-Up
+
+\section1 C++ Code
+
+First we create a simple C++ project.
+
+\list{1}
+\li Create a folder as project root directory
+\code
+mkdir example-project
+cd example-project
+\endcode
+
+\li Create two subfolders, one for the source, one for the headers:
+\code
+mkdir include
+mkdir src
+\endcode
+
+You can also use different directory structure. You just have to be consistent.
+
+\li Create a C++ Class `include/my-class.h`
+\quotefile  getting-started/example-project/include/my-class.h
+
+\li Create a C++ File `include/my-class.cpp`
+\quotefromfile getting-started/example-project/src/my-class.cpp
+\printuntil #include <my-class.h>
+\skipuntil namespace MyNamespace
+\printuntil {
+\skipuntil MyClass::myFunction
+\printuntil }
+\printuntil }
+TODO
+
+
+\endlist
+
+*/

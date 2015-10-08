@@ -1,8 +1,14 @@
 /*!
-\page getting-started.html overview
+\page getting-started.html howto
+
+\indexpage Welcome
+\startpage Getting Started
+\nextpage Project Set-Up
 
 \title Getting Started
 
+In this tutorial, we will set up a minimalistic project, containing a little C++ code.
 
+So why wait, \l{Project Set-Up}{let's start}!
 
 */
