@@ -27,10 +27,10 @@ mkdir src
 
 You can also use different directory structure. You just have to be consistent.
 
-\li Create a C++ Class `include/my-class.h`
+\li Create a C++ Headerfile \b include/my-class.h
 \quotefile  getting-started/example-project/include/my-class.h
 
-\li Create a C++ File `include/my-class.cpp`
+\li Create a C++ Sourcefile \b include/my-class.cpp
 \quotefromfile getting-started/example-project/src/my-class.cpp
 \printuntil #include <my-class.h>
 \skipuntil namespace MyNamespace
