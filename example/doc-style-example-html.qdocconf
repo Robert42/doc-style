@@ -32,8 +32,6 @@ HTML.footer = "\n" \
               "        Documentation generated using the <a class='text-muted' href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.\n" \
               "        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;\n" \
               "        Using the <a class='text-muted' href='http://getbootstrap.com/'>Bootstrap</a> framework.\n" \
-              "        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;\n" \
-              "        Using the Bootstrap theme: <a class='text-muted' href='http://bootswatch.com/sandstone/'>sandstone</a>\n" \
               "      </p>\n" \
               "    </center>\n" \
               "  </div>\n" \
