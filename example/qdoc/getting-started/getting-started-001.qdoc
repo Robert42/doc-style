@@ -34,11 +34,12 @@ You can also use different directory structure. You just have to be consistent.
 \quotefromfile getting-started/example-project/src/my-class.cpp
 \printuntil #include <my-class.h>
 \skipuntil namespace MyNamespace
+\skipto namespace MyNamespace
 \printuntil {
-\skipuntil MyClass::myFunction
+\skipto MyClass::myFunction
 \printuntil }
-\printuntil }
-TODO
+\printline }
+
 
 
 \endlist
