@@ -11,7 +11,7 @@ But hey, don't be sad. That's, what an example is for. Just showcasing useful st
 
 */
 
-/*! \class MyClass
+/*! \class MyNamespace::MyClass
 
 \brief This is a small class thought for the examle.
 
