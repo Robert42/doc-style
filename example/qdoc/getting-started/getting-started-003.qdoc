@@ -11,7 +11,7 @@
 
 \section1 Update directory structure.
 
-\list
+\list{1}
 \li If your project root directory is not already your current workig directory,
 make sure it is.
 \code
