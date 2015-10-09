@@ -78,9 +78,14 @@ function adaptSidebar()
   
   oldSidebar.remove();
   
+  $("div.toc > h3 > a").each(function(){
+    tocHeader = $(this);
+    tocHeader.replaceWith(tocHeader.html());
+  });
+  
   $(".toc > ul").addClass("list-unstyled");
   
-  var toc = $(".toc");
+  var toc = $("div.toc");
   toc.addClass("panel panel-default");
   toc.html("<div class='panel-body'>" + toc.html() +  "</div>");
 }
