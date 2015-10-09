@@ -6,6 +6,7 @@
 
 This showcase demonstrates, how different qdoc features look in the browser after applying the style.
 
+This the source for the current page:
 
 \quotefile showcase/showcase.qdoc
 
