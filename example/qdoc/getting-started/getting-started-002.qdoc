@@ -20,4 +20,6 @@ So our header files remains unchanged:
 \section1 Document Source File
 \quotefile  getting-started/example-project/src/my-class.cpp
 
+\note Note, that qdoc expects a namespace to be documented in order to generate documentation for the classes contained within that namespace.
+
 */

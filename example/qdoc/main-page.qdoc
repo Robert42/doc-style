@@ -18,4 +18,6 @@ is thought to make the integration of bootstrap into a qdoc html documentation e
 </div>
 \endraw
 
+\warning There are rumours, that qdoc is deprecated. \br You may want to take a look at the alternatives, like doxygen.
+
 */

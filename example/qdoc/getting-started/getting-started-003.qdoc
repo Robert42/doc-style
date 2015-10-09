@@ -31,4 +31,8 @@ mkdir manual
 Create the qdoc file \b doc/manual/landing-page.qdoc
 \quotefile  getting-started/example-project/doc/manual/landing-page.qdoc
 
+Note that the title will be normally used as part of the style. With one esception:
+If the filename is index.html, q jQuery script of doc-style is going to remove
+the title from the html page to make it more easy to customize the first page.
+
 */
