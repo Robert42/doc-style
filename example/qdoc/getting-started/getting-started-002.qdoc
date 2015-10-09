@@ -1,0 +1,23 @@
+/*!
+\page getting-started-002.html
+
+\indexpage Welcome
+\startpage Getting Started
+\contentspage Getting Started
+\previouspage Write some C++ Code
+\nextpage Add Index Page
+
+\title Add C++ Docu
+
+\section1 Document Header File
+QDoc only accepts documentation written files with the extensions defined in
+\c sources.fileextensions (usually cpp). Any documentation contained in header
+files \l{http://doc.qt.io/qt-5/qtwritingstyle-cpp.html}{is ignored}.
+
+So our header files remains unchanged:
+\quotefile  getting-started/example-project/include/my-class.h
+
+\section1 Document Source File
+\quotefile  getting-started/example-project/src/my-class.cpp
+
+*/

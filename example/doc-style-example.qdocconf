@@ -8,3 +8,4 @@ project = doc-style
 descripton = "An example for the doc-style"
 
 exampledirs += qdoc
+excludedirs += qdoc/getting-started/example-project

@@ -1,0 +1,55 @@
+/*!
+\page getting-started-006.html
+
+\indexpage Welcome
+\startpage Getting Started
+\contentspage Getting Started
+\previouspage Add HTML Style
+
+\title Add Python script
+
+The python script introduced here shows, how qdoc can be called to generate
+
+\quotefromfile getting-started/example-project/doc/create-doc.py
+\skipto scriptDir
+\printuntil scriptDir
+
+This line determines the location of the current python scriptfile
+
+\skipto docStyleDir
+\printuntil docStyleDir
+
+The \c docStyleDir variable contains now the path to the \c doc-style root directory.
+
+In this case it's easy, because the script file and the doc-style are both within
+the same git repository.
+\br
+Other projects may use the doc-style as a subproject to be also able to use a hardcoded
+relative path. Alternatively you can also use system wide environment variables.
+
+\skipto os.environ["DOCSTYLE_DIR"]
+\printuntil os.environ["DOCSTYLE_DIR"]
+
+The absolute path to doc-style must be stored in the environment variable  \c{DOCSTYLE_DIR}.
+\br
+Note, that this should be an absolute path. Also on windows the variable should contain
+backslashes instead of forward slashes. This is done using the function \c os.path.normpath function.
+
+\skipto subprocess.call
+\printuntil subprocess.call
+
+Finally, the \e qdoc is called. This line expects qdoc to be within a directory
+in the \c PATH environment variable. But you can also give the full path if you whish.
+
+
+Summary of the whole python script
+
+\quotefromfile getting-started/example-project/doc/create-doc.py
+\skipto import
+\printuntil docStyleDir
+\skipto os.environ["DOCSTYLE_DIR"]
+\printuntil os.environ["DOCSTYLE_DIR"]
+\skipto subprocess.call
+\printuntil subprocess.call
+
+*/

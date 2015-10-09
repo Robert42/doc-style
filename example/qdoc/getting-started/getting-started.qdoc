@@ -3,12 +3,17 @@
 
 \indexpage Welcome
 \startpage Getting Started
-\nextpage Project Set-Up
+\nextpage Write some C++ Code
 
 \title Getting Started
 
 In this tutorial, we will set up a minimalistic project, containing a little C++ code.
 
 So why wait, \l{Project Set-Up}{let's start}!
+
+This tutorial only shows how to create a very minimalistic qdoc project using
+bootstrap as style. This project will contain one C++ class, and an index page.
+
+For detailed information about QDoc itself, I recommend the \l{http://doc.qt.io/qt-5/qdoc-index.html}{official documentation}.
 
 */

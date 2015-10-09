@@ -1,0 +1,33 @@
+# Add doc-style to the project
+include($DOCSTYLE_DIR/doc-style-basics.qdocconf)
+# $DOCSTYLE_DIR must be an environment variable pointing to the directory, where
+# doc-style-basics.qdocconf is located
+
+# We want to generate HTML and write it into the html directory
+outputformats = HTML
+outputdir = html
+
+# Where to look for *.qdoc files
+exampledirs += manual
+
+# Where to look for *.cpp files
+sourcedirs += ../src
+
+# Where to look for *.h files
+headerdirs += ../include
+
+
+###################################
+
+# add the bootstrap css file
+# Note, that it is important to use `+=` instead of `=`  for `HTML.stylesheets` and `HTML.headerstyles`
+HTML.stylesheets += style/bootstrap/bootstrap.css
+HTML.headerstyles += "<link rel='stylesheet' href='./style/bootstrap.css'>\n"
+
+# Every html file using doc-style needs exactly one `div` with
+# the class `content-root` and one with `sidebar-root` as these
+# will be used by the jQuery script
+HTML.postheader = "<div class='sidebar-root'></div>" \
+                  "<div class='content-root'>"
+HTML.footer = "</div>"
+

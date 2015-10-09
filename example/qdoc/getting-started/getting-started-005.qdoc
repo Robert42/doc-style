@@ -1,0 +1,58 @@
+/*!
+\page getting-started-005.html
+
+\indexpage Welcome
+\startpage Getting Started
+\contentspage Getting Started
+\previouspage Add QDoc Config
+\nextpage Add Python script
+
+\title Add HTML Style
+
+To add the html style we need to add some html related commands to the config file
+
+\quotefromfile getting-started/example-project/doc/example.qdocconf
+
+\skipuntil HTML.stylesheets
+\skipto HTML.stylesheets
+\printuntil HTML.headerstyles
+
+You have to add a bootstrap css file by yourself, as this will customize the
+final look of your resulting documentation.
+\br
+QDoc will copy the given style the subfolder \e style of the html documents, so
+the \c href attribute of the \c{<link rel='stylesheet' ... >} will probably be
+different to the path added to the \c HTML.stylesheets variable
+\br
+Note, that we use for \c HTML.stylesheets and \c HTML.headerstyles \c += instead
+of \c = to add it to the stylesheets already added by \e doc-style-basics.qdocconf
+instead of overwriting them.
+
+\skipto HTML.postheader
+\printuntil "</div>"
+
+Every html file using doc-style needs exactly one `div` with the class `content-root`
+and one with `sidebar-root` as these will be used by the jQuery script.
+
+This results in the following minimalistic \e .qdocconf file:
+
+\quotefromfile getting-started/example-project/doc/example.qdocconf
+\skipto doc-style-basics.qdocconf
+\printuntil doc-style-basics.qdocconf
+\skipto outputformats
+\codeline
+\printuntil outputdir
+\skipto exampledirs
+\printuntil exampledirs
+\skipto sourcedirs
+\printuntil sourcedirs
+\skipto headerdirs
+\printuntil headerdirs
+\codeline
+\skipuntil HTML.stylesheets
+\skipto HTML.stylesheets
+\printuntil HTML.headerstyles
+\skipto HTML.postheader
+\printuntil "</div>"
+
+*/

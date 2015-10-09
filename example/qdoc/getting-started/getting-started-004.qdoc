@@ -1,0 +1,57 @@
+/*!
+\page getting-started-004.html
+
+\indexpage Welcome
+\startpage Getting Started
+\contentspage Getting Started
+\previouspage Add Index Page
+\nextpage Add HTML Style
+
+\title Add QDoc Config
+
+\quotefromfile getting-started/example-project/doc/example.qdocconf
+
+\skipto doc-style-basics.qdocconf
+\printuntil doc-style-basics.qdocconf
+
+First we need to include the doc-style.
+\c $DOCSTYLE_DIR must be an environment variable pointing to the directory, where doc-style is located.
+
+\skipto outputformats
+\printuntil outputdir
+
+With the variable \c outputformats, we tell qdoc, that we want generate an HTML documentation. The \c outputdir variable is used to define the directory, where  the generated html content should be located.
+\br
+If you are using a version control system, it might be a good idea to let the version control system ignore this outputdir.
+
+\skipto exampledirs
+\printuntil exampledirs
+
+The \c exampledirs variable stores the directories, where qdoc will search for *.qdoc files.
+
+\skipto sourcedirs
+\printuntil sourcedirs
+
+The \c sourcedirs variable stores the directories, where qdoc will search for qdoc comments within source files.
+
+\skipto headerdirs
+\printuntil headerdirs
+
+The \c headerdirs variable stores the directories, where qdoc will search for header files.
+
+Here the whole minimalistic qdocconf file:
+
+\quotefromfile getting-started/example-project/doc/example.qdocconf
+\skipto doc-style-basics.qdocconf
+\printuntil doc-style-basics.qdocconf
+\skipto outputformats
+\codeline
+\printuntil outputdir
+\skipto exampledirs
+\printuntil exampledirs
+\skipto sourcedirs
+\printuntil sourcedirs
+\skipto headerdirs
+\printuntil headerdirs
+
+*/

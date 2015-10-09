@@ -5,10 +5,11 @@
 \startpage Getting Started
 \contentspage Getting Started
 \previouspage Getting Started
+\nextpage Add C++ Docu
 
-\title Project Set-Up
+\title Write some C++ Code
 
-\section1 C++ Code
+\section1 Create Directories
 
 First we create a simple C++ project.
 
@@ -25,12 +26,18 @@ mkdir include
 mkdir src
 \endcode
 
+\endlist
+
 You can also use different directory structure. You just have to be consistent.
 
-\li Create a C++ Headerfile \b include/my-class.h
+\section1 Create Header File
+
+Create a C++ Headerfile \b include/my-class.h
 \quotefile  getting-started/example-project/include/my-class.h
 
-\li Create a C++ Sourcefile \b include/my-class.cpp
+\section1 Create Source File
+
+Create a C++ Sourcefile \b include/my-class.cpp
 \quotefromfile getting-started/example-project/src/my-class.cpp
 \printuntil #include <my-class.h>
 \skipuntil namespace MyNamespace
@@ -41,10 +48,5 @@ You can also use different directory structure. You just have to be consistent.
 \printline }
 
 
-
-\section1 Add QDoc Configuration files
-\list{1}
-\li Create a subfolder for your documentation
-\endlist
 
 */

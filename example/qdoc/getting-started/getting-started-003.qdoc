@@ -1,0 +1,34 @@
+/*!
+\page getting-started-003.html
+
+\indexpage Welcome
+\startpage Getting Started
+\contentspage Getting Started
+\previouspage Add C++ Docu
+\nextpage Add QDoc Config
+
+\title Add Index Page
+
+\section1 Update directory structure.
+
+\list
+\li If your project root directory is not already your current workig directory,
+make sure it is.
+\code
+cd example-project
+\endcode
+
+\li Create a directory for the documentation itself
+\code
+mkdir doc
+cd doc
+mkdir manual
+\endcode
+\endlist
+
+\section1 Add *.qdoc file
+
+Create the qdoc file \b doc/manual/landing-page.qdoc
+\quotefile  getting-started/example-project/doc/manual/landing-page.qdoc
+
+*/
