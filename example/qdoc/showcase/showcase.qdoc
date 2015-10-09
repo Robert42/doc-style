@@ -1,0 +1,12 @@
+/*! \page showcase.html
+
+\title Showcase
+
+\nextpage Show Warning and Note
+
+This showcase demonstrates, how different qdoc features look in the browser after applying the style.
+
+
+\quotefile showcase/showcase.qdoc
+
+*/

@@ -1,8 +1,8 @@
-/*! \page test-warning-and-note.html
+/*! \page showcase-warning-and-note.html
 
-\title Test Warning and Note
+\title Show Warning and Note
 
-\previouspage Tests
+\previouspage Showcase
 
 \warning This only a test warning. This showcases a warning, but doesn't really warn from anything.
 \br
@@ -11,5 +11,7 @@ Look, this one has multiple lines.
 \note This is a small note.
 
 \note Wow, there are multiple notes
+
+\quotefile showcase/showcase-warning-and-note.qdoc
 
 */
