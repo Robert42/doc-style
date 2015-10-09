@@ -121,6 +121,44 @@ function adaptNote()
   adaptWarningOrNote("Note", "panel-info", "doc-style-note");
 }
 
+function _addPager(naviArea)
+{
+  var prevPageElement = $(naviArea+" > .prevPage");
+  var nextPageElement = $(naviArea+" > .nextPage");
+  var navi = $(naviArea);
+  
+  if(navi && (prevPageElement || nextPageElement))
+  {
+    var prev = "";
+    var next = "";
+    
+    var prevText = prevPageElement.text();
+    var nextText = nextPageElement.text();
+    
+    if(prevText)
+    {
+      var text = prevText;
+      var href = prevPageElement.attr("href");
+      prev = "<li class='previous'><a href='"+href+"'><span aria-hidden='true'>&larr;</span> "+text+"</a></li>";
+    }
+    if(nextText)
+    {
+      var text = nextText;
+      var href = nextPageElement.attr("href");
+      next = "<li class='next'><a href='"+href+"'>"+text+" <span aria-hidden='true'>&rarr;</span></a></li>";
+    }
+  
+    navi.replaceWith("<nav><ul class='pager'>"+prev+next+"</ul></nav>");
+  }
+}
+
+function addPager()
+{
+  _addPager(".footerNavi");
+  //_addPager(".headerNavi");
+  $(".headerNavi").remove();
+}
+
 $(document).ready(function() {
   adaptBreadcrums();
   if(isFile("index.html"))
@@ -135,4 +173,5 @@ $(document).ready(function() {
   
   adaptWarning();
   adaptNote();
+  addPager();
 });
