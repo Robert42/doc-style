@@ -9,6 +9,8 @@ This page shows, how a namespace overview looks like.
 
 \generatelist namespaces
 
+This the source for the current page:
+
 \quotefile showcase/showcase-namespace-overview.qdoc
 
 */

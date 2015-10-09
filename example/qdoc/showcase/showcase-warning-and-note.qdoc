@@ -12,6 +12,8 @@
 \br
 Look, this one has two lines.
 
+This the source for the current page:
+
 \quotefile showcase/showcase-warning-and-note.qdoc
 
 */
