@@ -1,0 +1,14 @@
+/*! \page showcase-namespace-overview.html
+
+\title Show Namespace Overview
+
+\previouspage Showcase
+\nextpage Show Warning and Note
+
+This page shows, how a namespace overview looks like.
+
+\generatelist namespaces
+
+\quotefile showcase/showcase-namespace-overview.qdoc
+
+*/
