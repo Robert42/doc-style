@@ -9,3 +9,6 @@ descripton = "An example for the doc-style"
 
 exampledirs += qdoc
 excludedirs += qdoc/getting-started/example-project
+
+sourcedirs += qdoc/showcase/cpp/src
+headerdirs += qdoc/showcase/cpp/include

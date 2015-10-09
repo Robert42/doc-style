@@ -13,7 +13,9 @@ Welcome to this callection of css-, javascript- and qdoc config files. This coll
 is thought to make the integration of bootstrap into a qdoc html documentation easier.
 </p>
 <p>
-<a class="btn btn-primary btn-lg" href="getting-started.html">Get Started</a>
+<a class="btn btn-primary btn-lg" href="showcase.html">Showcase</a>
+<a class="btn btn-lg btn-lg" href="getting-started.html">Get Started</a>
+<a class="btn btn-lg" href="https://github.com/Robert42/doc-style">GitHub Page</a>
 </p>
 </div>
 \endraw
