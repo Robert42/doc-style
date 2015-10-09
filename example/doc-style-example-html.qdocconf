@@ -34,9 +34,11 @@ HTML.footer = "\n" \
               "      <p class='text-muted'>\n" \
               "        &copy; Robert Hildebrandt  2015\n" \
               "        <br>\n" \
-              "        Documentation generated using the <a class='text-muted' href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.\n" \
+              "        Documentation generated using the <a href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.\n" \
               "        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;\n" \
-              "        Using the <a class='text-muted' href='http://getbootstrap.com/'>Bootstrap</a> framework.\n" \
+              "        Using <a href='http://jquery.com/'>jQuery</a>\n" \
+              "        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;\n" \
+              "        Using the <a href='http://getbootstrap.com/'>Bootstrap</a> framework.\n" \
               "      </p>\n" \
               "    </center>\n" \
               "  </div>\n" \
