@@ -20,3 +20,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
+div.doc-style-warning, div.doc-style-note
+{
+  border-left-width: 6pt;
+}

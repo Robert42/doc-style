@@ -98,6 +98,29 @@ function isFile(filename)
   return getFilename() == filename;
 }
 
+function adaptWarningOrNote(element, panelClass, docStyleClass)
+{
+  var element = $("p > b:contains('"+element+":')");
+  if(!element)
+    return;
+  
+  p = element.parent();
+  
+  element.addClass(docStyleClass + "-label");
+  
+  p.replaceWith("<div class='panel "+panelClass+" "+docStyleClass+"'><div class='panel-body'>"+p.html()+"</div></div>");
+}
+
+function adaptWarning()
+{
+  adaptWarningOrNote("Warning", "panel-warning", "doc-style-warning");
+}
+
+function adaptNote()
+{
+  adaptWarningOrNote("Note", "panel-info", "doc-style-note");
+}
+
 $(document).ready(function() {
   adaptBreadcrums();
   if(isFile("index.html"))
@@ -109,4 +132,7 @@ $(document).ready(function() {
     adaptTitle();
     adaptSidebar();
   }
+  
+  adaptWarning();
+  adaptNote();
 });

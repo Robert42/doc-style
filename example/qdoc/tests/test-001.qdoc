@@ -1,0 +1,13 @@
+/*! \page test-001.html
+
+\title Test Warning and Note
+
+\warning This only a test warning. This showcases a warning, but doesn't really warn from anything.
+\br
+Look, this one has multiple lines.
+
+\note This is a small note.
+
+\note Wow, there are multiple notes
+
+*/

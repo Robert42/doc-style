@@ -11,6 +11,9 @@ HTML.postheader = "\n" \
                   "    <div class='navbar-header'>\n" \
                   "      <a class='navbar-brand' href='index.html'>Welcome</a>\n" \
                   "    </div>\n" \
+                  "    <ul class='nav navbar-nav'>\n" \
+                  "      <li><a href='tests.html'>Tests</a></li>\n" \
+                  "    </ul>\n" \
                   "  </div>\n" \
                   "</nav>\n" \
                   "\n" \
