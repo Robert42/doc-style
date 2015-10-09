@@ -164,6 +164,23 @@ function addPager()
   $(".headerNavi").remove();
 }
 
+function _adaptOverviewTables(selector)
+{
+  $("div.table > " + selector).each(function(){
+    var table = $(this);
+    var div = table.parent();
+    
+    div.attr("class", "panel panel-default");
+    table.attr("class", "table");
+  });
+}
+
+function adaptOverviewTables()
+{
+  _adaptOverviewTables("table.annotated");
+  _adaptOverviewTables("table.alignedsummary");
+}
+
 $(document).ready(function() {
   adaptBreadcrums();
   if(isFile("index.html"))
@@ -179,4 +196,6 @@ $(document).ready(function() {
   adaptWarning();
   adaptNote();
   addPager();
+  
+  adaptOverviewTables();
 });
