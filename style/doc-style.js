@@ -100,18 +100,15 @@ function isFile(filename)
 
 function adaptWarningOrNote(element, panelClass, docStyleClass)
 {
-  var elements = $("p > b:contains('"+element+":')");
-  
-  for(i=0; i<elements.length(); ++i)
-  {
-    var element = elelemts[i];
+  $("p > b:contains('"+element+":')").each(function() {
+    var element = $(this);
   
     p = element.parent();
     
     element.addClass(docStyleClass + "-label");
     
     p.replaceWith("<div class='panel "+panelClass+" "+docStyleClass+"'><div class='panel-body'>"+p.html()+"</div></div>");
-  }
+  });
 }
 
 function adaptWarning()
