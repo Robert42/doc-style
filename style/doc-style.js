@@ -171,7 +171,7 @@ function _adaptOverviewTables(selector)
     var div = table.parent();
     
     div.attr("class", "panel panel-default");
-    table.attr("class", "table table-hover table-bordered table-striped");
+    table.attr("class", "table table-bordered table-striped");
   });
 }
 
@@ -179,6 +179,13 @@ function adaptOverviewTables()
 {
   _adaptOverviewTables("table.annotated");
   _adaptOverviewTables("table.alignedsummary");
+}
+
+function adaptLinkToMembers()
+{
+  var linkToAllMembers = $(".content-root > ul > li > a:contains('List of all members')");
+  linkToAllMembers.parent().parent().addClass("list-unstyled");
+  linkToAllMembers.html("<span aria-hidden='true'>&raquo;</span> "+linkToAllMembers.html());
 }
 
 $(document).ready(function() {
@@ -198,4 +205,5 @@ $(document).ready(function() {
   addPager();
   
   adaptOverviewTables();
+  adaptLinkToMembers();
 });
