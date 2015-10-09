@@ -3,6 +3,7 @@
 /*! \namespace A
 
 \inmodule showcase
+\inheaderfile a.h
 
 \brief This is namespace \c A created to showcase doc generation.
 
@@ -32,6 +33,7 @@ But hey, that's the idea of it.
 /*! \class A::Foo
 
 \inmodule showcase
+\inheaderfile a/foo.h
 
 \brief This a brief description for the class A::Foo
 
