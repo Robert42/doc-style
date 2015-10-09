@@ -25,3 +25,12 @@ div.doc-style-warning, div.doc-style-note
 {
   border-left-width: 6pt;
 }
+
+td.memItemLeft
+{
+  white-space: nowrap;
+}
+td.memItemRight
+{
+  width: 100%;
+}

@@ -171,7 +171,7 @@ function _adaptOverviewTables(selector)
     var div = table.parent();
     
     div.attr("class", "panel panel-default");
-    table.attr("class", "table");
+    table.attr("class", "table table-hover table-bordered table-striped");
   });
 }
 
