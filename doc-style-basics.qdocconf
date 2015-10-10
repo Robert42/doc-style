@@ -26,4 +26,3 @@ headers.fileextensions += *.h
 
 include(doc-style-html.qdocconf)
 
-Cpp.ignoretokens += final

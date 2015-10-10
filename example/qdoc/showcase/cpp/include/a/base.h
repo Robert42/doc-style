@@ -12,5 +12,6 @@ namespace A
     virtual void abstractBaseMemberFunction3(int) const = 0;
     virtual void abstractBaseMemberFunction4(int) const = 0;
     virtual void abstractBaseMemberFunction5(int) const = 0;
+    virtual void virtualBaseMemberFunction1(int) const;
   };
 }
