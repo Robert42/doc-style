@@ -190,6 +190,7 @@ function adaptLinkToMembers()
 
 function adaptNamespaceTypeMemberDetails(parentClass, searchedClass)
 {
+  // Make it a panel
   $("div."+parentClass).each(function(){
     var root = $(this);
     
@@ -233,6 +234,11 @@ function adaptNamespaceTypeMemberDetails(parentClass, searchedClass)
     newHtml = newHtml + oldHtml.substring(prevIndex, oldHtml.length);
     
     root.html(newHtml);
+  });
+  
+  // Make the panel heading small by removing the h3 tag
+  $("div."+parentClass + " > div.panel > div.panel-heading > h3").each(function(){
+    $(this).replaceWith($(this).html());
   });
 }
 
