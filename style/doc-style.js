@@ -188,6 +188,61 @@ function adaptLinkToMembers()
   linkToAllMembers.html("<span aria-hidden='true'>&raquo;</span> "+linkToAllMembers.html());
 }
 
+function adaptNamespaceTypeMemberDetails(parentClass, searchedClass)
+{
+  $("div."+parentClass).each(function(){
+    var root = $(this);
+    
+    var oldHtml = root.html();
+    var newHtml = "";
+    
+    var prevIndex = 0;
+    var newIndex = -1;
+    
+    while((newIndex = oldHtml.indexOf("<h3", prevIndex+1)) != -1)
+    {
+      newHtml = newHtml + oldHtml.substring(prevIndex, newIndex)
+      if(prevIndex != 0)
+        newHtml = newHtml + "</div>\n</div>\n";
+      newHtml = newHtml + "<div class='panel panel-default'>\n";
+      newHtml = newHtml + "<div class='panel-heading'>\n";
+      
+      prevIndex = newIndex;
+    }
+    
+    newHtml = newHtml + oldHtml.substring(prevIndex, oldHtml.length);
+    if(prevIndex != 0)
+      newHtml = newHtml + "</div>\n</div>\n";
+    
+    prevIndex = 0;
+    newIndex = -1;
+    
+    oldHtml = newHtml;
+    newHtml = "";
+    
+    while((newIndex = oldHtml.indexOf("</h3>", prevIndex+1)) != -1)
+    {
+      newIndex += 5;
+      newHtml = newHtml + oldHtml.substring(prevIndex, newIndex)
+      newHtml = newHtml + "\n</div>\n";
+      newHtml = newHtml + "<div class='panel-body'>\n";
+      
+      prevIndex = newIndex;
+    }
+    
+    newHtml = newHtml + oldHtml.substring(prevIndex, oldHtml.length);
+    
+    root.html(newHtml);
+  });
+}
+
+function adaptMemberDetails()
+{
+  adaptNamespaceTypeMemberDetails("classes");
+  adaptNamespaceTypeMemberDetails("types");
+  adaptNamespaceTypeMemberDetails("func");
+}
+
 $(document).ready(function() {
   adaptBreadcrums();
   if(isFile("index.html"))
@@ -206,4 +261,6 @@ $(document).ready(function() {
   
   adaptOverviewTables();
   adaptLinkToMembers();
+  
+  adaptMemberDetails();
 });
