@@ -256,8 +256,9 @@ function adaptLabel(label)
     var parent = code.parent();
     code.remove();
     
-    var labelHtml = "<span class='label label-default'>"+label+"</span>";
-    parent.html(labelHtml + parent.html());
+    var rightAligned = "style='float:right'";
+    var labelHtml = "<span class='label label-default'"+rightAligned+">"+label+"</span>";
+    parent.html(parent.html() + labelHtml);
   });
 }
 
