@@ -249,6 +249,29 @@ function adaptMemberDetails()
   adaptNamespaceTypeMemberDetails("func");
 }
 
+function adaptLabel(label)
+{
+  $("code:contains('["+label+"]')").each(function(){
+    var code = $(this);
+    var parent = code.parent();
+    code.remove();
+    
+    var labelHtml = "<span class='label label-default'>"+label+"</span>";
+    parent.html(labelHtml + parent.html());
+  });
+}
+
+function adaptLabels()
+{
+  adaptLabel("static");
+  adaptLabel("signal");
+  adaptLabel("slot");
+  adaptLabel("virtual");
+  adaptLabel("pure virtual");
+  adaptLabel("override");
+  adaptLabel("final");
+}
+
 $(document).ready(function() {
   adaptBreadcrums();
   if(isFile("index.html"))
@@ -269,4 +292,5 @@ $(document).ready(function() {
   adaptLinkToMembers();
   
   adaptMemberDetails();
+  adaptLabels();
 });
