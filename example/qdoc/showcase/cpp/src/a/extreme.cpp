@@ -303,4 +303,24 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 */
 Extreme Extreme::operator+(const Extreme& other) const;
 
+/*!
+\class A::Extreme::InnerClass
+\brief This is the Inner class  
+\inmodule showcase
+\inheaderfile a/extreme.h
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
+/*!
+\brief This is the Inner class'  method
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text. 
+*/
+void Extreme::InnerClass::hello()
+{
+}
+  
 }

@@ -12,6 +12,8 @@ namespace A
   public:
     typedef Base Parent;
     
+    class InnerClass;
+    
     friend class Parent;
     friend globalFunction__;
     friend void Base::baseMemberFunction1();
@@ -67,6 +69,12 @@ namespace A
   protected slot:
     void virtualProtecetdSlotBaseMemberFunction1(int) const override;
     void virtualProtecetdSlotBaseMemberFunction2(int) const override;
+  };
+  
+  class Extreme::InnerClass
+  {
+  public:
+    void hello();
   };
   
 }
