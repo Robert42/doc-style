@@ -282,8 +282,9 @@ function adaptLabels()
   adaptLabel("slot");
   adaptLabel("protected slot");
   adaptLabel("virtual");
-  adaptLabel("pure virtual");
   adaptLabel("virtual protected");
+  adaptLabel("pure virtual");
+  adaptLabel("pure virtual protected");
   adaptLabel("override");
   adaptLabel("final");
 }
