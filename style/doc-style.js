@@ -181,11 +181,22 @@ function adaptOverviewTables()
   _adaptOverviewTables("table.alignedsummary");
 }
 
-function adaptLinkToMembers()
+function adaptLinkToMemberPage(text)
 {
-  var linkToAllMembers = $(".content-root > ul > li > a:contains('List of all members')");
+  var linkToAllMembers = $(".content-root > ul > li > a:contains('"+text+"')");
   linkToAllMembers.parent().parent().addClass("list-unstyled");
   linkToAllMembers.html("<span aria-hidden='true'>&raquo;</span> "+linkToAllMembers.html());
+}
+
+function adaptLinkToMembers()
+{
+  adaptLinkToMemberPage("List of all members");
+}
+
+function makeLiUnstyled(text)
+{
+  var li = $(".content-root > ul > li:contains('"+text+"')");
+  li.parent().addClass("list-unstyled");
 }
 
 function adaptNamespaceTypeMemberDetails(parentClass, searchedClass)
@@ -291,6 +302,7 @@ $(document).ready(function() {
   
   adaptOverviewTables();
   adaptLinkToMembers();
+  makeLiUnstyled("public functions inherited from");
   
   adaptMemberDetails();
   adaptLabels();
