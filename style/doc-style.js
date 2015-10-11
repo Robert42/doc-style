@@ -290,6 +290,21 @@ function adaptLabels()
   adaptLabel("final");
 }
 
+function adaptVersion()
+{
+  var version = $("p.lead + div.panel.panel-default > table.table > tbody > tr >  td.memItemLeft:contains('Since:') + td.memItemRight:contains('Qt')");
+  
+  version.each(function(){
+    var v = $(this);
+    var t = v.text();
+    t = t.replace('Qt', '');
+    t = t.trim();
+    
+    v.text(t);
+    v.addClass("SinceVersion");
+  });
+}
+
 $(document).ready(function() {
   adaptBreadcrums();
   if(isFile("index.html"))
@@ -313,4 +328,6 @@ $(document).ready(function() {
   
   adaptMemberDetails();
   adaptLabels();
+  
+  adaptVersion();
 });

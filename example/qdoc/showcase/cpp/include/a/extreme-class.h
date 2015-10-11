@@ -27,6 +27,14 @@ namespace A
     static int memberVariableStatic2;
     
   public:
+    Extreme();
+    ~Extreme();
+    Extreme(const Extreme& other);
+    
+    Extreme& operator=(const Extreme& other);
+    Extreme operator+(const Extreme& other) const;
+    
+  public:
     void abstractBaseMemeberFunction1() override;
     void abstractBaseMemeberFunction1(int) final override;
     

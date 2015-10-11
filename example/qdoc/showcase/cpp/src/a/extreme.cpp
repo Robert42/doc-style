@@ -2,6 +2,7 @@
 
 /*!
 \class A::Extreme
+\since 42
 
 \brief This is a class containg a lot.
 
@@ -228,7 +229,7 @@ void globalFunction__()
 \variable Extreme::memberVariableStatic1
 \brief This is the static variable memberVariableStatic1
 
-This the docu for globalFunction.\br Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
 */
 int Extreme::memberVariableStatic1;
@@ -237,7 +238,7 @@ int Extreme::memberVariableStatic1;
 \variable Extreme::memberVariableStatic2
 \brief This is the static variable memberVariableStatic2
 
-This the docu for globalFunction.\br Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
 */
 int Extreme::memberVariableStatic2;
@@ -246,7 +247,7 @@ int Extreme::memberVariableStatic2;
 \variable Extreme::memberVariable1
 \brief This is the static variable memberVariable1
 
-This the docu for globalFunction.\br Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
 */
 int memberVariable1;
@@ -255,9 +256,51 @@ int memberVariable1;
 \variable Extreme::memberVariable2
 \brief This is the static variable memberVariable2
 
-This the docu for globalFunction.\br Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
 */
 int memberVariable2;
+
+/*!
+\brief This is the ctor Extreme::Extreme
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+Extreme::Extreme()
+{
+}
+
+/*!
+\brief This is the dtor Extreme::Extreme
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+Extreme::~Extreme();
+
+/*!
+\brief This is the copy ctor Extreme::Extreme
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text. \a other.
+*/
+Extreme::Extreme(const Extreme& other);
+
+/*!
+\brief This is the assignment operator
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text. \a other.
+*/
+Extreme& Extreme::operator=(const Extreme& other);
+
+/*!
+\brief This is the plus operator
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text. \a other.
+*/
+Extreme Extreme::operator+(const Extreme& other) const;
 
 }
