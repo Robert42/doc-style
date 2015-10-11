@@ -13,6 +13,8 @@ namespace A
     
     static void extremeStaticFunction(int);
     
+    void baseMemberFunction1();
+    
   protected:
     void extremeProtectedFunction(int) const;
     static void extremeProtectedStaticFunction(int);

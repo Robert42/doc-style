@@ -180,4 +180,21 @@ void Extreme::virtualProtecetdSlotBaseMemberFunction2(int xyz) const
 {
 }
 
+/*!
+\brief This the  member function Extreme::baseMemberFunction1() const of the Base class
+
+Detailed documentation to the \c{Extreme::baseMemberFunction1() const}  function with the argument.
+
+Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+
+*/
+void Extreme::baseMemberFunction1()
+{
+}
+
 }
