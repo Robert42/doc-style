@@ -20,6 +20,20 @@ namespace A
     friend void Base::baseStaticMemberFunction1();
     friend void Extreme::extremeStaticFunction(int);
     
+    enum Enum1
+    {
+      EOh,
+      EHappy,
+      EDay,
+    };
+    
+    enum ENUM_CLASS Enum2 ENUM_CLASS_BASE( : int32)
+    {
+      Oh,
+      Happy,
+      Day,
+    };
+    
   public:
     int memberVariable1;
     static int memberVariableStatic1;
@@ -76,5 +90,10 @@ namespace A
   public:
     void hello();
   };
+  
+  class SubClassA : public Extreme{};
+  class SubClassB : public Extreme{};
+  class SubClassC : public Extreme{};
+  class SubClassD : public Extreme{};
   
 }

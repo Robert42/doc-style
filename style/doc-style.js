@@ -199,7 +199,19 @@ function makeLiUnstyled(text)
   li.parent().addClass("list-unstyled");
 }
 
-function adaptNamespaceTypeMemberDetails(parentClass, searchedClass)
+
+function adaptTablesInPanel(parentClass, tableclass)
+{
+  $("div."+parentClass+" > div.panel > div.panel-body > div.table > table"+tableclass).each(function(){
+    var table = $(this);
+    table.addClass("table");
+    var div_table = table.parent();
+    div_table.parent().after(div_table.html());
+    div_table.remove();
+  });
+}
+
+function adaptNamespaceTypeMemberDetails(parentClass)
 {
   // Make it a panel
   $("div."+parentClass).each(function(){
@@ -259,6 +271,8 @@ function adaptMemberDetails()
   adaptNamespaceTypeMemberDetails("types");
   adaptNamespaceTypeMemberDetails("func");
   adaptNamespaceTypeMemberDetails("vars");
+  
+  adaptTablesInPanel("types", ".valuelist");
 }
 
 function adaptLabel(label)

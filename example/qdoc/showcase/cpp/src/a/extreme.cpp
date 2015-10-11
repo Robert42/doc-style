@@ -322,5 +322,79 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 void Extreme::InnerClass::hello()
 {
 }
+
+/*!
+\class A::SubClassA
+\brief This is the SubClassA
+\inmodule showcase
+\inheaderfile a/extreme.h
+
+\brief This is a subclass
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
+/*!
+\class A::SubClassB
+\brief This is the SubClassB
+\inmodule showcase
+\inheaderfile a/extreme.h
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
+/*!
+\class A::SubClassC
+\brief This is the SubClassC
+\inmodule showcase
+\inheaderfile a/extreme.h
+
+\brief This is a subclass
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
+/*!
+\class A::SubClassD
+\brief This is the SubClassD
+\inmodule showcase
+\inheaderfile a/extreme.h
+
+\brief This is a subclass
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
+/*!
+\enum A::Extreme::Enum1
+
+\brief This is the Enum1
+
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+\value EOh this is Oh
+\value EHappy this is Happy
+\value EDay this is Day
+
+*/
+
+/*!
+\enum A::Extreme::Enum2
+
+\brief This is the Enum2
+
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+\value Oh this is Oh
+\value Happy this is Happy
+\value Day this is Day
+*/
   
 }

@@ -24,5 +24,8 @@ sources.fileextensions += *.cpp
 sources.fileextensions += *.inl
 headers.fileextensions += *.h
 
+Cpp.ignoredirectives += ENUM_CLASS_BASE
+Cpp.ignoretokens += ENUM_CLASS
+
 include(doc-style-html.qdocconf)
 
