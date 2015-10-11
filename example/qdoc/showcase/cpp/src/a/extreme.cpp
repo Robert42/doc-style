@@ -59,5 +59,136 @@ usually not a good idea when writing a documentation. But for a showcase I think
   void Extreme::virtualBaseMemberFunction1(int) const
   {
   }
+  
+  /*! \brief Some other text. To be able to get a feeling for text formating
+
+extremeSignal \a xyz Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+  */
+  void Extreme::extremeSignal(int xyz)
+  {
+  }
+  
+  /*! \brief Some other text. To be able to get a feeling for text formating
+
+extremePublicSlot \a xyz Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+  */
+  void Extreme::extremePublicSlot(int xyz)
+  {
+  }
+  
+  /*! \brief Some other text. To be able to get a feeling for text formating
+
+extremeProtectedSlot \a xyz Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+  */
+  void Extreme::extremeProtectedSlot(int xyz)
+  {
+  }
+  
+  void Extreme::extremePrivateSlot(int xyz)
+  {
+  }
+  
+  /*! \brief Some other text. To be able to get a feeling for text formating
+
+extremeProtectedFunction \a xyz Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+  */
+  void Extreme::extremeProtectedFunction(int xyz) const
+  {
+  }
+  
+  /*! \brief Some other text. To be able to get a feeling for text formating
+
+extremeStaticFunction \a xyz Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+  */
+  void Extreme::extremeStaticFunction(int xyz)
+  {
+  }
+  
+  /*! \brief Some other text. To be able to get a feeling for text formating
+
+extremeProtectedStaticFunction \a xyz Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+  */
+  void Extreme::extremeProtectedStaticFunction(int xyz)
+  {
+  }
+
+/*!
+\brief This the  member function Extreme::virtualProtecetdBaseMemberFunction1(int) const of the Base class
+
+Detailed documentation to the \c{Extreme::virtualProtecetdBaseMemberFunction1(int) const}  function with the argument \a xyz.
+
+Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+
+*/
+void Extreme::virtualProtecetdBaseMemberFunction1(int xyz) const;
+
+/*!
+\brief This the  member function Extreme::virtualProtecetdBaseMemberFunction1(int) const of the Base class
+
+Detailed documentation to the \c{Extreme::virtualProtecetdBaseMemberFunction1(int) const}  function with the argument \a xyz.
+
+Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+
+*/
+void Extreme::virtualProtecetdBaseMemberFunction2(int xyz) const
+{
+}
+
+/*!
+\brief This the  member function Extreme::virtualProtecetdSlotBaseMemberFunction1(int) const of the Base class
+
+Detailed documentation to the \c{Extreme::virtualProtecetdSlotBaseMemberFunction1(int) const}  function with the argument \a xyz.
+
+Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+
+*/
+void Extreme::virtualProtecetdSlotBaseMemberFunction1(int xyz) const
+{
+}
+
+
+/*!
+\brief This the  member function Extreme::virtualProtecetdSlotBaseMemberFunction2(int) const of the Base class
+
+Detailed documentation to the \c{Extreme::virtualProtecetdSlotBaseMemberFunction2(int) const}  function with the argument \a xyz.
+
+Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+
+*/
+void Extreme::virtualProtecetdSlotBaseMemberFunction2(int xyz) const
+{
+}
 
 }

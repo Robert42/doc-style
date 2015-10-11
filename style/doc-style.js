@@ -275,11 +275,15 @@ function adaptLabel(label)
 
 function adaptLabels()
 {
+  adaptLabel("protected");
   adaptLabel("static");
+  adaptLabel("static protected");
   adaptLabel("signal");
   adaptLabel("slot");
+  adaptLabel("protected slot");
   adaptLabel("virtual");
   adaptLabel("pure virtual");
+  adaptLabel("virtual protected");
   adaptLabel("override");
   adaptLabel("final");
 }
@@ -302,7 +306,7 @@ $(document).ready(function() {
   
   adaptOverviewTables();
   adaptLinkToMembers();
-  makeLiUnstyled("public functions inherited from");
+  makeLiUnstyled("functions inherited from");
   
   adaptMemberDetails();
   adaptLabels();

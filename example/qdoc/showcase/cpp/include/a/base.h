@@ -13,5 +13,13 @@ namespace A
     virtual void abstractBaseMemberFunction4(int) const = 0;
     virtual void abstractBaseMemberFunction5(int) const = 0;
     virtual void virtualBaseMemberFunction1(int) const;
+    
+  protected:
+    virtual void virtualProtecetdBaseMemberFunction1(int) const;
+    virtual void virtualProtecetdBaseMemberFunction2(int) const = 0;
+    
+  protected slot:
+    virtual void virtualProtecetdSlotBaseMemberFunction1(int) const;
+    virtual void virtualProtecetdSlotBaseMemberFunction2(int) const = 0;
   };
 }
