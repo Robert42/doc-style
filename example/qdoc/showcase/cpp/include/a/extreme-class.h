@@ -5,7 +5,12 @@ namespace A
   
   class Extreme : public Base
   {
+  protected:
+    typedef Base ProtectedParent;
+    
   public:
+    typedef Base Parent;
+  
     void abstractBaseMemeberFunction1() override;
     void abstractBaseMemeberFunction1(int) final override;
     

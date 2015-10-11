@@ -197,4 +197,20 @@ void Extreme::baseMemberFunction1()
 {
 }
 
+/*! \typedef A::Extreme::ProtectedParent
+\brief This the  member function Extreme::ProtecetdParent const of the Base class
+
+Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+*/
+
+/*! \typedef A::Extreme::Parent
+\brief This the  member function Extreme::Parent const of the Base class
+
+Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+*/
+
 }
