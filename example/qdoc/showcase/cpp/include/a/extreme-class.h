@@ -2,6 +2,7 @@
 
 namespace A
 {
+  void globalFunction__();
   
   class Extreme : public Base
   {
@@ -10,7 +11,22 @@ namespace A
     
   public:
     typedef Base Parent;
-  
+    
+    friend class Parent;
+    friend globalFunction__;
+    friend void Base::baseMemberFunction1();
+    friend void Base::baseStaticMemberFunction1();
+    friend void Extreme::extremeStaticFunction(int);
+    
+  public:
+    int memberVariable1;
+    static int memberVariableStatic1;
+    
+  protected:
+    int memberVariable2;
+    static int memberVariableStatic2;
+    
+  public:
     void abstractBaseMemeberFunction1() override;
     void abstractBaseMemeberFunction1(int) final override;
     

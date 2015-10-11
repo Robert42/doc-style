@@ -213,4 +213,51 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 
 */
 
+/*!
+\brief This the  global function globalFunction__ of the Base class
+
+This the docu for globalFunction.\br Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+void globalFunction__()
+{
+}
+
+
+/*! 
+\variable Extreme::memberVariableStatic1
+\brief This is the static variable memberVariableStatic1
+
+This the docu for globalFunction.\br Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+int Extreme::memberVariableStatic1;
+
+/*! 
+\variable Extreme::memberVariableStatic2
+\brief This is the static variable memberVariableStatic2
+
+This the docu for globalFunction.\br Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+int Extreme::memberVariableStatic2;
+
+/*! 
+\variable Extreme::memberVariable1
+\brief This is the static variable memberVariable1
+
+This the docu for globalFunction.\br Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+int memberVariable1;
+
+/*! 
+\variable Extreme::memberVariable2
+\brief This is the static variable memberVariable2
+
+This the docu for globalFunction.\br Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+int memberVariable2;
+
 }

@@ -15,6 +15,7 @@ namespace A
     virtual void virtualBaseMemberFunction1(int) const;
     
     void baseMemberFunction1();
+    static void baseStaticMemberFunction1();
     
   protected:
     virtual void virtualProtecetdBaseMemberFunction1(int) const;

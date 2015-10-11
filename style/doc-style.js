@@ -258,6 +258,7 @@ function adaptMemberDetails()
   adaptNamespaceTypeMemberDetails("classes");
   adaptNamespaceTypeMemberDetails("types");
   adaptNamespaceTypeMemberDetails("func");
+  adaptNamespaceTypeMemberDetails("vars");
 }
 
 function adaptLabel(label)
@@ -308,6 +309,7 @@ $(document).ready(function() {
   adaptOverviewTables();
   adaptLinkToMembers();
   makeLiUnstyled("functions inherited from");
+  makeLiUnstyled("member inherited from");
   
   adaptMemberDetails();
   adaptLabels();
