@@ -1,11 +1,11 @@
-#include <a/foo.h>
+#include <a.h>
 
-/*! \class A::Foo
+/*! \namespace A
 
 \inmodule showcase
-\inheaderfile a/foo.h
+\inheaderfile a.h
 
-\brief This a brief description for the class A::Foo
+\brief This is namespace \c A created to showcase doc generation.
 
 Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
@@ -32,14 +32,33 @@ But hey, that's the idea of it.
 
 namespace A
 {
+/*!
+\typedef A::ThisIsATypedef
 
-/*! \brief This a brief description for functionA
+\brief This a typedef ThisIsATypedef
 
-Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+*/
+
+
+/*!
+\variable A::thisIsAVariable
+
+\brief This a variable thisIsAVariable
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
 */
-void Foo::functionA()
-{
-}
 
+/*!
+\variable A::thisIsAnotherVariable
+
+\brief This another variable thisIsAnotherVariable
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+int thisIsAnotherVariable;
 }

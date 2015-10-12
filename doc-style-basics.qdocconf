@@ -24,6 +24,8 @@ sources.fileextensions += *.cpp
 sources.fileextensions += *.inl
 headers.fileextensions += *.h
 
+Cpp.ignoretokens += extern
+
 Cpp.ignoredirectives += Q_ENUM
 Cpp.ignoredirectives += ENUM_CPP11
 
