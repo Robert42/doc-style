@@ -27,12 +27,14 @@ namespace A
       EDay,
     };
     
-    enum ENUM_CLASS Enum2 ENUM_CLASS_BASE( : int32)
+    enum ENUM_CPP11(class) Enum2 ENUM_CPP11( : int32)
     {
       Oh,
       Happy,
       Day,
     };
+    
+    Q_ENUM(Enum2)
     
   public:
     int memberVariable1;
