@@ -285,6 +285,7 @@ function adaptMemberDetails()
   adaptNamespaceTypeMemberDetails("func");
   adaptNamespaceTypeMemberDetails("vars");
   adaptNamespaceTypeMemberDetails("prop");
+  adaptNamespaceTypeMemberDetails("macros");
   
   adaptTablesInPanel("types", ".valuelist");
 }

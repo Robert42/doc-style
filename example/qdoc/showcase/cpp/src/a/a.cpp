@@ -61,4 +61,54 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
 */
 int thisIsAnotherVariable;
+
+/*!
+\fn std::ostream& A::operator<<(std::ostream& o, const Foo& foo)
+\brief This is an overloaded operator for printing values
+
+This has an rgumentd \a o and another \a foo.
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+std::ostream& operator << (std::ostream& o, const Foo& foo)
+{
+}
+
+/*! \macro void MACRO(a,x)
+\relates A::Extreme
+
+\brief This is a macro MACRO
+
+It has two arguments \a a and \a x.
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
+/*! \macro void MACRO_2(a,x)
+\relates A
+
+\brief This is a macro MACRO_2
+
+It has two arguments \a a and \a x.
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
+/*! \fn T A::globalTemplateFunction(const T& xyz);
+\brief This the docu for globalTemplateFunction
+
+This has an \a xyz argument.
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+  
+  /*! \enum A::GlobalEnum
+\brief This the docu for the enum GlobalEnum
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+\value Hello Hi there
+\value World So round ans blue
+*/
 }
