@@ -412,5 +412,27 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
  Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
 */
+
+/*!
+\class A::Extreme::InnerTemplateClass
+\brief This is the InnerTemplateClass
+\inmodule showcase
+\inheaderfile a/extreme.h
+
+\brief This is a InnerTemplateClass
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
+/*!
+\class A::TemplateClass
+\brief This is the TemplateClass
+\inmodule showcase
+\inheaderfile a/extreme.h
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
   
 }

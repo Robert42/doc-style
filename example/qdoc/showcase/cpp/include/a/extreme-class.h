@@ -18,6 +18,9 @@ namespace A
     
     class InnerClass;
     
+    template<typename T>
+    class InnerTemplateClass;
+    
     friend class Parent;
     friend globalFunction__;
     friend void Base::baseMemberFunction1();
@@ -101,6 +104,16 @@ namespace A
   {
   public:
     void hello();
+  };
+  
+  template<typename T>
+  class Extreme::InnerTemplateClass
+  {
+  };
+  
+  template<typename T>
+  class TemplateClass
+  {
   };
   
   class SubClassA : public Extreme{};
