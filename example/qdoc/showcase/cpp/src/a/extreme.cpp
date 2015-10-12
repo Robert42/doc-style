@@ -396,5 +396,21 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 \value Happy this is Happy
 \value Day this is Day
 */
+
+/*! \property A::Extreme::foo
+\brief This is the property foo of the class A::Extreme
+
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
+/*! \property A::Extreme::foo2
+\brief This is the property foo2 of the class A::Extreme
+
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
   
 }

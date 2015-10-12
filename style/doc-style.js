@@ -181,6 +181,19 @@ function adaptOverviewTables()
   _adaptOverviewTables("table.alignedsummary");
 }
 
+function _adaptOverviewLists(selector)
+{
+  var ul = $(selector);
+  ul.wrap("<div class='panel panel-default'></div>");
+  ul.addClass("list-group");
+  ul.children().addClass("list-group-item");
+}
+
+function adaptOverviewLists()
+{
+  _adaptOverviewLists("h2#properties + ul");
+}
+
 function adaptLinkToMemberPage(text)
 {
   var linkToAllMembers = $(".content-root > ul > li > a:contains('"+text+"')");
@@ -271,6 +284,7 @@ function adaptMemberDetails()
   adaptNamespaceTypeMemberDetails("types");
   adaptNamespaceTypeMemberDetails("func");
   adaptNamespaceTypeMemberDetails("vars");
+  adaptNamespaceTypeMemberDetails("prop");
   
   adaptTablesInPanel("types", ".valuelist");
 }
@@ -336,6 +350,7 @@ $(document).ready(function() {
   addPager();
   
   adaptOverviewTables();
+  adaptOverviewLists();
   adaptLinkToMembers();
   makeLiUnstyled("functions inherited from");
   makeLiUnstyled("member inherited from");

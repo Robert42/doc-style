@@ -1,11 +1,15 @@
 #include "base.h"
+#include "foo.h"
 
 namespace A
 {
   void globalFunction__();
   
-  class Extreme : public Base
+  class Extreme : public QObject, public Base
   {
+    Q_OBJECT
+    Q_PROPERTY(Foo foo READ foo WRITE setFoo RESET resetFoo NOTIFY fooChanged);
+    Q_PROPERTY(B::Foo foo2 READ foo WRITE setFoo RESET resetFoo NOTIFY fooChanged);
   protected:
     typedef Base ProtectedParent;
     
@@ -45,6 +49,11 @@ namespace A
     static int memberVariableStatic2;
     
   public:
+    const Foo& foo() const;
+    void setFoo(const Foo&);
+    void resetFoo();
+    
+  public:
     Extreme();
     ~Extreme();
     Extreme(const Extreme& other);
@@ -68,6 +77,7 @@ namespace A
     
   signals:
     void extremeSignal(int);
+    void fooChanged(const Foo& foo);
     
   public slots:
     void extremePublicSlot(int);
