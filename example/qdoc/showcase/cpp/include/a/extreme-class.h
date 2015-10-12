@@ -74,6 +74,9 @@ namespace A
     
     void baseMemberFunction1();
     
+    template<typename T>
+    void extremeTemplateMemberFunction1();
+    
   protected:
     void extremeProtectedFunction(int) const;
     static void extremeProtectedStaticFunction(int);
