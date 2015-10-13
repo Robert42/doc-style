@@ -32,3 +32,4 @@ HTML.headerscripts += "<script src='./scripts/jquery-1.11.3.min.js'></script>\n"
                       "<script src='./scripts/bootstrap.js'></script>\n"
 
 macro.keyboard.HTML = "<kbd>\1</kbd>"
+macro.kbd.HTML = "<kbd>\1</kbd>"
