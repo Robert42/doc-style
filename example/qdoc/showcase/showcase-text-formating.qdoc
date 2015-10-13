@@ -5,16 +5,16 @@
 \previouspage Showcase
 \nextpage Show Namespace Overview
 
-\section1 General Text formatting
+\section1 1. General Text formatting
 
 This page shows, some text formatting features.
 
 As you would expect, making single words \b bold or \b{multiple words} is quite
 easy to to. Same for \e emphasizing single words or \e{multiple words}.
 
-\section1 Programmer specific formatting
+\section1 2. Programmer specific formatting
 
-\section2 Keyboard Shortcuts
+\section2 2.1 Keyboard Shortcuts
 If you want to highlight a part of your documentation as a keyboard shortcut, you
 can use the \c \keyboard command. For example the well known shortcut for copying
 content to the clipboard: \keyboard{Ctrl}+\keyboard{c}.
@@ -23,7 +23,7 @@ A shorter version to \c \keyboard is \c \kbd. It does the same thing, but with l
 letters: \kbd{Ctrl}+\kbd{Shift}+\kbd{P}
 
 
-\section2 Math
+\section2 2.2 Math
 Mathjax is integrated. Inline formulas \math{y^2>2\cdot x^{\sqrt4}} are supported.
 
 \mathline{\int_{x=0}^{42} x\;dx \ne \sum_{i=1}^{n} \frac{1}{\sqrt{i}}}
@@ -37,9 +37,21 @@ Instead you have to use double backslashes if you are using the
 type in \c$$\\sqrt{n}$$ to get $$\\sqrt{n}$$
 
 
-\section1 Source
+\section1 3. Source
 
-This the source for the current page:
+You can highlight code as source code using \c{\c{...}}: This is \c{some code}.
+
+Use \c\begin and \c\end for showing a block of code:
+\code
+#include <some-header.h>
+while(true)
+{
+  doSomething(42, "Hehe"); // Just a line of code
+}
+\endcode
+
+You can use \c{\quotefile} to show the content of a file.
+For example, this the source for the current page:
 
 \quotefile showcase/showcase-text-formating.qdoc
 
