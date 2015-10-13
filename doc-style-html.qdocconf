@@ -29,7 +29,11 @@ HTML.headerstyles += "<link rel='stylesheet' href='./style/doc-style.css'>\n"
 
 HTML.headerscripts += "<script src='./scripts/jquery-1.11.3.min.js'></script>\n" \
                       "<script src='./scripts/doc-style.js'></script>\n" \
-                      "<script src='./scripts/bootstrap.js'></script>\n"
+                      "<script src='./scripts/bootstrap.js'></script>\n" \
+                      "<script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>\n" \
+                      ""
 
 macro.keyboard.HTML = "<kbd>\1</kbd>"
 macro.kbd.HTML = "<kbd>\1</kbd>"
+macro.math.HTML = "\\(\1\\)"
+macro.mathline.HTML = "\\[\1\\]"

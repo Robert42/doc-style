@@ -5,13 +5,39 @@
 \previouspage Showcase
 \nextpage Show Namespace Overview
 
+\section1 General Text formatting
+
 This page shows, some text formatting features.
 
-As you would expect, making single words \b bold or \b{multiuple words} is quite easy to to. Same for \e emphasizing single words or \e{multiple words}.
+As you would expect, making single words \b bold or \b{multiuple words} is quite
+easy to to. Same for \e emphasizing single words or \e{multiple words}.
 
-If you want to highlight a part of your documentation as a keyboard shortcut, you can use the \c \keyboard command. For example \keyboard{Ctrl}+\keyboard{c}.
+\section1 Programmer specific formatting
+
+\section2 Keyboard Shortcuts
+If you want to highlight a part of your documentation as a keyboard shortcut, you
+can use the \c \keyboard command. For example the well known shortcut for copying
+content to the clipboard: \keyboard{Ctrl}+\keyboard{c}.
 \br
-A shorter version to \c \keyboard is \c \kbd. It does the same thing, but with less letters: \kbd{Ctrl}+\kbd{Shift}+\kbd{P}
+A shorter version to \c \keyboard is \c \kbd. It does the same thing, but with less
+letters: \kbd{Ctrl}+\kbd{Shift}+\kbd{P}
+
+
+\section2 Math
+Mathjax is integrated. Inline formulas \math{y^2>2\cdot x^{\sqrt4}} are supported.
+
+\mathline{\int_{x=0}^{42} x\;dx \ne \sum_{i=1}^{n} \frac{1}{\sqrt{i}}}
+
+\note You don't have to worry about html special html characters, because qdoc will escape
+the special html characters like \c{<}, or \c{>}. So for example the qdoc code
+\c{\math{a<b>c</b>c}} will result in the following formula: \math{a<b>c</b>c}.
+\br
+Instead you have to use double backslashes if you are using the
+\c{$$ ... $$}, \c{\[ ... \]} or \c{\( ... \)} command directly. For example you need to
+type in \c$$\\sqrt{n}$$ to get $$\\sqrt{n}$$
+
+
+\section1 Source
 
 This the source for the current page:
 
