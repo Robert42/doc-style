@@ -31,4 +31,4 @@ HTML.headerscripts += "<script src='./scripts/jquery-1.11.3.min.js'></script>\n"
                       "<script src='./scripts/doc-style.js'></script>\n" \
                       "<script src='./scripts/bootstrap.js'></script>\n"
 
-macro.keyboard.HTML = "<kbd></kbd>"
+macro.keyboard.HTML = "<kbd>\1</kbd>"
