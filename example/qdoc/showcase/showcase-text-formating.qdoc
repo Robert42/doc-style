@@ -9,7 +9,7 @@
 
 This page shows, some text formatting features.
 
-As you would expect, making single words \b bold or \b{multiuple words} is quite
+As you would expect, making single words \b bold or \b{multiple words} is quite
 easy to to. Same for \e emphasizing single words or \e{multiple words}.
 
 \section1 Programmer specific formatting
