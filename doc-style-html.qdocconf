@@ -30,3 +30,5 @@ HTML.headerstyles += "<link rel='stylesheet' href='./style/doc-style.css'>\n"
 HTML.headerscripts += "<script src='./scripts/jquery-1.11.3.min.js'></script>\n" \
                       "<script src='./scripts/doc-style.js'></script>\n" \
                       "<script src='./scripts/bootstrap.js'></script>\n"
+
+macro.keyboard.HTML = "<kbd></kbd>"
