@@ -1,0 +1,18 @@
+/*! \page showcase-text-formating.html
+
+\title Show Text Formating
+
+\previouspage Showcase
+\nextpage Show Namespace Overview
+
+This page shows, some text formatting features.
+
+As you would expect, making single words \b bold or \b{multiuple words} is quite easy to to. Same for \e emphasizing single words or \e{multiple words}.
+
+If you want to highlight a part of your documentation as a keyboard shortcut, you can use the \c \keyboard command. For example \keyboard{Ctrl}+\keyboard{c}
+
+This the source for the current page:
+
+\quotefile showcase/showcase-text-formating.qdoc
+
+*/
