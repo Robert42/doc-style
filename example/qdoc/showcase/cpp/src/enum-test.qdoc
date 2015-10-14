@@ -1,0 +1,52 @@
+/*!  \namespace EnumTest
+\inmodule showcase
+
+\brief This namespace is used to test the support of c++11 enumerations.
+
+It contains the following enumerations:
+\list
+\li PlainSimpleEnum
+\li ByteEnum
+\li StrongEnum
+\li StrongIntEnum
+\endlist
+
+If some of them are shown as class or not shown in this namespace overview at all. C++11 macros are not supported yet.
+
+*/
+
+/*! \enum EnumTest::PlainSimpleEnum
+\brief A simple enumeration without any c++11 features
+
+\value SimpleA The first value
+\value SimpleB The second value
+\value SimpleC The third value
+*/
+
+/*! \enum EnumTest::ByteEnum
+
+\brief An enumeration using new C++11 features: The underlying type is \c{unsigned char}
+
+\value ByteA The first value
+\value ByteB The second value
+\value ByteC The third value
+
+*/
+
+/*! \enum EnumTest::StrongEnum
+
+\brief An enumeration using new C++11 features: A strong typed enumeration.
+
+\value A The first value
+\value B The second value
+\value C The third value
+*/
+
+/*! \enum EnumTest::StrongIntEnum
+
+\brief An enumeration using new C++11 features: A strong typed enumeration with \c int as underlying type.
+
+\value A The first value
+\value B The second value
+\value C The third value
+*/
