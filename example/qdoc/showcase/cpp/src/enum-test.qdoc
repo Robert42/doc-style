@@ -8,6 +8,7 @@ It contains the following enumerations:
 \li PlainSimpleEnum
 \li ByteEnum
 \li StrongEnum
+\li StrongByteEnum
 \li StrongIntEnum
 \endlist
 
@@ -36,6 +37,15 @@ If some of them are shown as class or not shown in this namespace overview at al
 /*! \enum EnumTest::StrongEnum
 
 \brief An enumeration using new C++11 features: A strong typed enumeration.
+
+\value A The first value
+\value B The second value
+\value C The third value
+*/
+
+/*! \enum EnumTest::StrongByteEnum
+
+\brief An enumeration using new C++11 features: A strong typed enumeration with \c ByteEnum as underlying type.
 
 \value A The first value
 \value B The second value

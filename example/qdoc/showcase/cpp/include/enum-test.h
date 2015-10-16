@@ -21,4 +21,9 @@ namespace EnumTest
     A, B, C
   };
   
+  enum class StrongByteEnum : ByteEnum
+  {
+    A, B, C
+  };
+  
 }
