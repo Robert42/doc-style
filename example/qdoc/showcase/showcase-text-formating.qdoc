@@ -58,4 +58,15 @@ For example, this the source for the current page:
 
 \quotefile showcase/showcase-text-formating.qdoc
 
+
+\section1 4. Miscellaneous
+
+\section2 4.1 Images
+
+\image qdoc/showcase/images/cat.jpg Look, a cat! :D
+\caption I have downloaded this image from \l{https://pixabay.com/en/cat-silhouette-cats-silhouette-694730/}{pixabay.com}
+
+Inline images \inlineimage qdoc/showcase/images/cat.jpg Look, a cat! :)
+are possible.
+
 */
