@@ -1,0 +1,29 @@
+/*! \page showcase-groups.html
+\ingroup showcase
+
+\title Showcase Groups
+
+\brief This Page :)
+
+\previouspage Showcase
+\nextpage Show Text Formating
+
+You can use groups to define modules of your software.
+
+With the command \c\annotatedlist you can show all elements of a group. For example the group of all pages of this showcase:
+
+\annotatedlist showcase
+
+Here's the content of a second group with some C++ Code:
+
+\annotatedlist cpp-group
+
+Elements can be in multiple groups:
+
+\annotatedlist cpp-group2
+
+
+\quotefile showcase/showcase-groups.qdoc
+
+*/
+

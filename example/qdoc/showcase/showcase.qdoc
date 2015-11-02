@@ -1,8 +1,11 @@
 /*! \page showcase.html
+\ingroup showcase
 
 \title Showcase
 
-\nextpage Show Text Formating
+\nextpage Showcase Groups
+
+\brief Landing Page
 
 This showcase demonstrates, how different qdoc features look in the browser after applying the style.
 

@@ -3,6 +3,8 @@
 /*! \namespace A
 
 \inmodule showcase
+\ingroup cpp-group
+\ingroup cpp-group2
 \inheaderfile a.h
 
 \brief This is namespace \c A created to showcase doc generation.
@@ -35,6 +37,8 @@ namespace A
 /*!
 \typedef A::ThisIsATypedef
 
+\ingroup cpp-group
+
 \brief This a typedef ThisIsATypedef
 
  Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
@@ -46,6 +50,8 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 /*!
 \variable A::thisIsAVariable
 
+\ingroup cpp-group
+
 \brief This a variable thisIsAVariable
 
  Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
@@ -54,6 +60,8 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 
 /*!
 \variable A::thisIsAnotherVariable
+
+\ingroup cpp-group
 
 \brief This another variable thisIsAnotherVariable
 
@@ -64,6 +72,9 @@ int thisIsAnotherVariable;
 
 /*!
 \fn std::ostream& A::operator<<(std::ostream& o, const Foo& foo)
+
+\ingroup cpp-group
+
 \brief This is an overloaded operator for printing values
 
 This has an rgumentd \a o and another \a foo.
@@ -75,6 +86,9 @@ std::ostream& operator << (std::ostream& o, const Foo& foo)
 }
 
 /*! \macro void MACRO(a,x)
+
+\ingroup cpp-group
+
 \relates A::Extreme
 
 \brief This is a macro MACRO
@@ -85,6 +99,9 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 */
 
 /*! \macro void MACRO_2(a,x)
+
+\ingroup cpp-group
+
 \relates A
 
 \brief This is a macro MACRO_2
@@ -95,6 +112,9 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 */
 
 /*! \fn T A::globalTemplateFunction(const T& xyz);
+
+\ingroup cpp-group
+
 \brief This the docu for globalTemplateFunction
 
 This has an \a xyz argument.
@@ -103,6 +123,9 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 */
   
   /*! \enum A::GlobalEnum
+
+\ingroup cpp-group
+
 \brief This the docu for the enum GlobalEnum
 
  Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.

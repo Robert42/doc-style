@@ -1,6 +1,9 @@
 /*! \page showcase-namespace-overview.html
+\ingroup showcase
 
 \title Show Namespace Overview
+
+\brief Namespace Overview
 
 \previouspage Show Text Formating
 \nextpage Show Warning and Note

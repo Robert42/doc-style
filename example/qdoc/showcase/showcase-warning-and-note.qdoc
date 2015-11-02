@@ -1,6 +1,9 @@
 /*! \page showcase-warning-and-note.html
+\ingroup showcase
 
 \title Show Warning and Note
+
+\brief Colorful panels showing warnings and notes
 
 \previouspage Show Namespace Overview
 

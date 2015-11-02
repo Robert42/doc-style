@@ -1,8 +1,11 @@
 /*! \page showcase-text-formating.html
+\ingroup showcase
 
 \title Show Text Formating
 
-\previouspage Showcase
+\brief Different Text Formatting. Also Code and Math Formulas.
+
+\previouspage Showcase Groups
 \nextpage Show Namespace Overview
 
 \section1 1. General Text formatting
