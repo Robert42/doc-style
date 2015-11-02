@@ -2,6 +2,7 @@
 
 import subprocess
 import webbrowser
+import sys
 import os
 from os import path
 
@@ -14,4 +15,7 @@ os.environ["DOCSTYLE_DIR"] = path.normpath(path.abspath(docStyleDir));
 
 # Note, for the following line to work, the directory containing qdoc must be in the PATH variable
 subprocess.call(["qdoc", path.join(scriptDir, "doc-style-example.qdocconf")])
-webbrowser.open(path.join(scriptDir, "html", "index.html"))
+
+if "show" in sys.argv:
+    webbrowser.open(path.join(scriptDir, "html", "index.html"))
+
