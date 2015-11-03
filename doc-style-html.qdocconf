@@ -33,7 +33,9 @@ HTML.headerscripts += "<script src='./scripts/jquery-1.11.3.min.js'></script>\n"
                       "<script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>\n" \
                       ""
 
-macro.keyboard.HTML = "<kbd>\1</kbd>"
-macro.kbd.HTML = "<kbd>\1</kbd>"
+macro.shortcut.HTML = "<kbd><kbd>\1</kbd></kbd>"
+macro.short.HTML = "<kbd>"
+macro.cut.HTML = "</kbd>"
+macro.key.HTML = "<kbd>\1</kbd>"
 macro.math.HTML = "\\(\1\\)"
 macro.mathline.HTML = "\\[\1\\]"
