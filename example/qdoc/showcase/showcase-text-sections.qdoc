@@ -1,0 +1,40 @@
+/*! \page showcase-text-sections.html
+\ingroup showcase
+
+\title Show Text Sections
+
+\brief Shows the formatting of a chapter and sections
+
+\previouspage Show Text Formating
+\nextpage Show Namespace Overview
+
+\part This is a \\part
+
+Some text.
+
+\chapter This is a \\chapter
+
+Some text.
+
+\section1 This is a \\section1
+
+Some text.
+
+\section2 This is a \\section2
+
+Some text.
+
+\section3 This is a \\section3
+
+Some text.
+
+\section4 This is a \\section4
+
+Some text.
+
+\section4 This is a \\section4
+
+Some text.
+
+
+*/

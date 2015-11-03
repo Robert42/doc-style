@@ -334,6 +334,13 @@ function adaptVersion()
   });
 }
 
+function adaptChapterAndPart()
+{
+  var h0 = $('h0');
+  
+  h0.replaceWith('<h1 class="page-header">' + h0.text() + '</h1>');
+}
+
 $(document).ready(function() {
   adaptBreadcrums();
   if(isFile("index.html"))
@@ -360,4 +367,6 @@ $(document).ready(function() {
   adaptLabels();
   
   adaptVersion();
+  
+  adaptChapterAndPart();
 });
