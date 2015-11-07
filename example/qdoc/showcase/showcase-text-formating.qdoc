@@ -62,6 +62,27 @@ type in \c$$\\sqrt{n}$$ to get $$\\sqrt{n}$$
 Inline images \inlineimage qdoc/showcase/images/cat.jpg Look, a cat! :)
 are possible.
 
+\section2 4.2 HTML
+
+\section3 4.2.1 \\div
+
+You can easily add div sections to the html output easily.
+
+For example, the following commands
+
+\quotefromfile showcase/showcase-text-formating.qdoc
+\skipuntil \section3 4.2.1 \\div
+\skipuntil will result in
+\printto \section
+
+will result in
+
+\div{class="alert alert-success"}
+\b Yay, successfully demonstration of the \\div command :D
+\enddiv
+
+\section1 Source
+
 This is the source for the current page:
 
 \quotefile showcase/showcase-text-formating.qdoc
