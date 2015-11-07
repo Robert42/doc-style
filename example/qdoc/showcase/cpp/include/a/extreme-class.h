@@ -77,6 +77,8 @@ namespace A
     template<typename T>
     void extremeTemplateMemberFunction1();
     
+    void oldFunctionOnyHereForCompatibility();
+    
   protected:
     void extremeProtectedFunction(int) const;
     static void extremeProtectedStaticFunction(int);

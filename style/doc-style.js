@@ -278,6 +278,15 @@ function adaptNamespaceTypeMemberDetails(parentClass)
   });
 }
 
+function exists(selector)
+{
+  wasFound = false;
+  
+  $(selector).each(function(){wasFound=true;});
+  
+  return wasFound;
+}
+
 function adaptMemberDetails()
 {
   adaptNamespaceTypeMemberDetails("classes");
@@ -286,6 +295,9 @@ function adaptMemberDetails()
   adaptNamespaceTypeMemberDetails("vars");
   adaptNamespaceTypeMemberDetails("prop");
   adaptNamespaceTypeMemberDetails("macros");
+   
+  if(exists("div.content-root > h1.title:contains(Obsolete)"))
+    adaptNamespaceTypeMemberDetails("content-root");
   
   adaptTablesInPanel("types", ".valuelist");
 }
