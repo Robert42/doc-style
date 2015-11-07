@@ -19,6 +19,16 @@ Use \\tt for \tt{monospace} fonts.
 \br
 Use \\br for linebreaks.
 
+You can also \underline{underline} text or mark \ins{some text as inserted}. Yes those are different things. For example one css style might tint inserted text green while not changing the color of a simple underlined though text.
+
+Text descripting an \uicontrol{ui element} is drawn bold.
+
+You can \mark{highlight some text} like you have used a textmarker.
+
+Also you can mark \del{some text as deleted} or strike \s{some text through}. Yes those are different things. For example one css style might tint deleted text red while not changing the color of a simple stroke though text.
+
+Abbreviations are also easy to handle. so the user can known the difference between a \abbr{Künstliches Neuronales Netz}{KNN} and a \abbr{K Nearest Neighbor}{KNN}
+
 \section1 2. Programmer specific formatting
 
 \section2 2.1 Keyboard Shortcuts
