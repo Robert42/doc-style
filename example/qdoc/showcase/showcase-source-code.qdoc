@@ -73,7 +73,7 @@ will produce
 
 \section2 \\skipline & \\printline
 
-\\printline and \\skipline print the next line. The argument is only used to
+\c\printline and \c\skipline print the next line. The argument is only used to
 ensure, that the right line is printed. If the Next line is different to the
 given argument, the command will fail.
 \br
@@ -196,11 +196,11 @@ This macro allows seperating codeblocks
 
 will produce
 
-Without \\space
+Without \c\space
 \snippet showcase/cpp/snippetexample1.cpp Snippet A
 \snippet showcase/cpp/snippetexample2.cpp Snippet B
 
-With \\space
+With \c\space
 \snippet showcase/cpp/snippetexample1.cpp Snippet A
 \space
 \snippet showcase/cpp/snippetexample2.cpp Snippet B

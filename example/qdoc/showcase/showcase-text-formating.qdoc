@@ -14,6 +14,10 @@ This page shows, some text formatting features.
 
 As you would expect, making single words \b bold or \b{multiple words} is quite
 easy to to. Same for \e emphasizing single words or \e{multiple words}.
+\br
+Use \\tt for \tt{monospace} fonts.
+\br
+Use \\br for linebreaks.
 
 \section1 2. Programmer specific formatting
 
