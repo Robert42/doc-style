@@ -1,0 +1,28 @@
+This are some animal names in german sorted alphabetically:
+
+Ameise
+Bieber
+Chinchilla
+Dachs
+Elefant
+Fisch
+Gecko
+Hase
+Igel
+Jaguar
+Katze
+Leopard
+Maus
+Nilpferd
+Orang Utan
+Pinguin
+Qualle
+Rentier
+Schlange
+Tiger
+Uhu
+Vogel
+Waal
+Xenopus
+Yak
+Zebra

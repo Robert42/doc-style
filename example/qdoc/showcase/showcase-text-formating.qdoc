@@ -3,10 +3,10 @@
 
 \title Show Text Formating
 
-\brief Different Text Formatting. Also Code and Math Formulas.
+\brief Different Text Formatting. Also Math Formulas and Images.
 
 \previouspage Showcase Groups
-\nextpage Show Text Sections
+\nextpage Show Code Formating
 
 \section1 1. General Text formatting
 
@@ -47,26 +47,8 @@ Instead you have to use double backslashes if you are using the
 type in \c$$\\sqrt{n}$$ to get $$\\sqrt{n}$$
 
 
-\section1 3. Source
 
-You can highlight code as source code using \c{\c{...}}: This is \c{some code}.
-
-Use \c\begin and \c\end for showing a block of code:
-\code
-#include <some-header.h>
-while(true)
-{
-  doSomething(42, "Hehe"); // Just a line of code
-}
-\endcode
-
-You can use \c{\quotefile} to show the content of a file.
-For example, this the source for the current page:
-
-\quotefile showcase/showcase-text-formating.qdoc
-
-
-\section1 4. Miscellaneous
+\section1 3. Miscellaneous
 
 \section2 4.1 Images
 
@@ -75,5 +57,9 @@ For example, this the source for the current page:
 
 Inline images \inlineimage qdoc/showcase/images/cat.jpg Look, a cat! :)
 are possible.
+
+This is the source for the current page:
+
+\quotefile showcase/showcase-text-formating.qdoc
 
 */

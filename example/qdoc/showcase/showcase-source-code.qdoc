@@ -1,0 +1,215 @@
+/*! \page showcase-source-code.html
+\ingroup showcase
+
+\title Show Code Formating
+
+\brief Include Code into the Documentation
+
+\previouspage Show Text Formating
+\nextpage Show Text Sections
+
+\section1 \\code & \\endcode
+
+You can highlight code as source code using \c{\c{...}}: This is \c{some code}.
+
+Use \c\code and \c\endcode for showing a block of code:
+
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil will produce
+\printuntil \endcode
+
+will produce
+
+\code
+#include <some-header.h>
+while(true)
+{
+  doSomething(42, "Hehe"); // Just a line of code
+}
+\endcode
+
+
+\section1 \\quotefromfile
+
+\section2 \\skipto & \\printto
+
+Skips/prints to (excluding) a line.
+
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\skipto & \\printto
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\quotefromfile showcase/tiere.txt
+\skipto Katze
+\printto Pinguin
+
+\section2 \\skipuntil & \\printuntil
+
+Skips/prints to (including) a line.
+
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\skipuntil & \\printuntil
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\quotefromfile showcase/tiere.txt
+\skipuntil Katze
+\printuntil Pinguin
+
+
+\section2 \\skipline & \\printline
+
+\\printline and \\skipline print the next line. The argument is only used to
+ensure, that the right line is printed. If the Next line is different to the
+given argument, the command will fail.
+\br
+For example, if you would replace in the following example
+\c{\printline Chinchilla} with  \c{\printline Dachs} an error would be printed,
+because Dachs is not the next line, but Chinchilla is.
+
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\skipline & \\printline
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\quotefromfile showcase/tiere.txt
+\skipto Ameise
+\printline Ameise
+\skipline Bieber
+\printline Chinchilla
+
+
+\section2 \\codeline
+
+Connect different codeblocks
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\codeline
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\quotefromfile showcase/tiere.txt
+\skipto Jaguar
+\printline Jaguar
+\codeline
+\printline Katze
+
+
+\section2 \\dots
+
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\dots
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\quotefromfile showcase/tiere.txt
+\skipto Ameise
+\printline Ameise
+\dots
+\skipto Zebra
+\printline Zebra
+
+\section2 Mixing with text
+
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 Mixing with textl
+\skipuntil will produce
+\printto \section
+
+will produce
+
+
+\quotefromfile showcase/tiere.txt
+\skipto Jaguar
+
+This are three cat species
+
+\printuntil Leopard
+
+Ah, another mammal
+
+\printuntil Maus
+
+Wow there's another one:
+
+\printline Nilpferd
+
+And followed by another one
+
+\printuntil Orang Utan
+
+
+\section1 \\snippet
+
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\snippet
+\skipuntil will produce
+\printto \section
+
+will produce
+
+
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+
+\section1 \\space
+
+This macro allows seperating codeblocks
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\space
+\skipuntil will produce
+\printto \section
+
+will produce
+
+Without \\space
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+\snippet showcase/cpp/snippetexample2.cpp Snippet B
+
+With \\space
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+\space
+\snippet showcase/cpp/snippetexample2.cpp Snippet B
+
+\section1 \\quotefile
+
+You can use \c{\quotefile} to show the content of a file.
+For example, this is the source for the current page:
+
+\quotefile showcase/showcase-source-code.qdoc
+
+*/
