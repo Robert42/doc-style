@@ -35,7 +35,7 @@ function removeTitle()
 
 function adaptBrief()
 {
-  var p = $(".content-root > p");
+  var p = $(".content-root > h1.title + p");
 
   if(p && p.html())
   {
