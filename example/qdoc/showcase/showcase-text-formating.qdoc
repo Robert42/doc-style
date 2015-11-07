@@ -24,17 +24,17 @@ Use \\br for linebreaks.
 \section2 2.1 Keyboard Shortcuts
 If you want to highlight a part of your documentation as a keyboard shortcut, you
 can use the commands
-- \c \shortcut
-- \c \short
-- \c \cut
-- \c \key
+\list
+\li \c \shortcut
+\li \c \key
+\endlist
 
-Use \c{\shortcut{some-key}} for shortcuts consisting of only one key. For example \shortcut{Escape}.
+Use \c{\shortcut{\key{some-key}}} for shortcuts consisting of only one key. For example \shortcut{\key{Escape}}.
 \br
-Use \c{\short\key{first-key}+\key{second-key}+...+\key{last-key}} if your Shortcut consists of multiple keys. For example the well known shortcut for copying
-content to the clipboard: \short\key{Ctrl}+\key{c}\cut.
+Use \c{\shortcut{\key{first-key}+\key{second-key}+...+\key{last-key}}} if your Shortcut consists of multiple keys. For example the well known shortcut for copying
+content to the clipboard: \shortcut{\key{Ctrl}+\key{c}}.
 \br
-Another example with three keys: \short\key{Ctrl}+\key{Shift}+\key{P}\cut.
+Another example with three keys: \shortcut{\key{Ctrl}+\key{Shift}+\key{P}}.
 
 
 \section2 2.2 Math
