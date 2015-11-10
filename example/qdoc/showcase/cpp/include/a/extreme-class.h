@@ -79,6 +79,8 @@ namespace A
     
     void oldFunctionOnyHereForCompatibility();
     
+    void internalFunction();
+    
   protected:
     void extremeProtectedFunction(int) const;
     static void extremeProtectedStaticFunction(int);

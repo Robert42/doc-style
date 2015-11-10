@@ -1,5 +1,5 @@
-/*! \page showcase.html
-\ingroup showcase
+/*! \group showcase
+
 
 \title Showcase
 
@@ -12,5 +12,6 @@ This showcase demonstrates, how different qdoc features look in the browser afte
 This the source for the current page:
 
 \quotefile showcase/showcase.qdoc
+
 
 */

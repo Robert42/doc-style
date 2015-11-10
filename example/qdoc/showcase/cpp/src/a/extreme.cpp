@@ -44,6 +44,18 @@ usually not a good idea when writing a documentation. But for a showcase I think
   void Extreme::abstractBaseMemeberFunction1()
   {
   }
+
+  /*! \brief Some other text. To be able to get a feeling for text formating
+
+ \internal
+
+Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+  */
+  void Extreme::internalFunction()
+  {
+  }
   
   /*! \brief Some other text. To be able to get a feeling for text formating
 
@@ -318,6 +330,10 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 
  Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text. 
+
+\legalese
+This following function is licensed under the condiction of Creative Commons Zero
+\endlegalese
 */
 void Extreme::InnerClass::hello()
 {
@@ -329,6 +345,10 @@ void Extreme::InnerClass::hello()
 
  Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+
+\legalese
+This following function is licensed under the condiction of Creative Commons Zero
+\endlegalese
 */
 void Extreme::oldFunctionOnyHereForCompatibility()
 {

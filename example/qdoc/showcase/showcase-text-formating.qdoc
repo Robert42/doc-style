@@ -91,6 +91,36 @@ will result in
 \b Yay, successfully demonstration of the \\div command :D
 \enddiv
 
+\section2 4.3 Tables
+
+\table
+\header
+  \li A
+  \li B
+\row
+  \li a b c
+  \li defg
+\header
+  \li C
+  \li D
+\row
+  \li h i j
+  \li k l m
+\row
+  \li o p q
+  \li r s t u
+\row
+  \li v 
+  \li xw
+\row
+  \li{2,1} x y z
+\row
+  \li{1,2} two rows
+  \li a
+\row
+  \li b
+\endtable
+
 \section1 Source
 
 This is the source for the current page:

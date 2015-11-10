@@ -1,0 +1,18 @@
+/*! \page showcase-links.html
+\ingroup showcase
+
+\title Showcase Links
+
+\previouspage Show Code Formating
+\nextpage Show Text Sections
+
+\section1 \\externalpage
+
+The \c\externalpage command makes it easy to link to external pages, like for example the \l{QDoc Command Index}.
+
+*/
+
+/*! \externalpage http://doc.qt.io/qt-5/27-qdoc-commands-alphabetical.html
+
+\title QDoc Command Index
+*/

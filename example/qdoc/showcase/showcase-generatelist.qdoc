@@ -1,0 +1,68 @@
+/*! \page showcase-generatelist.html
+\ingroup showcase
+
+\title Show generatelist
+
+\brief Some Random Overviews
+
+\previouspage Show Text Sections
+\nextpage Show Warning and Note
+
+
+
+
+\section1 annotatedclasses
+
+\generatelist annotatedclasses
+
+
+
+
+\section1 classes
+
+\generatelist classes
+
+
+
+
+\section1 classesbymodule
+
+\generatelist classesbymodule showcase
+
+
+
+
+\section1 functionindex
+
+\generatelist functionindex
+
+
+
+
+\section1 legalese
+
+\generatelist legalese
+
+
+
+
+\section1 overviews
+
+\generatelist overviews
+
+
+
+
+
+\section1 Show Namespace Overview
+
+This section shows, how a namespace overview looks like.
+
+\generatelist namespaces
+
+
+This the source for the current page:
+
+\quotefile showcase/showcase-generatelist.qdoc
+
+*/
