@@ -89,6 +89,27 @@ usually not a good idea when writing a documentation. But for a showcase I think
   void Extreme::virtualBaseMemberFunction1(int) const
   {
   }
+
+
+  /*! \overload extremeOverloadedFunction(int i)
+    This function wraps around extremeOverloadedFunction(int) and passes 42
+
+  */
+  void Extreme::extremeOverloadedFunction()
+  {
+    extremeOverloadedFunction(42);
+  }
+
+  /*! \brief Some other text. To be able to get a feeling for text formating
+
+\a i Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
+It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
+usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+
+  */
+  void Extreme::extremeOverloadedFunction(int i)
+  {
+  }
   
   /*! \brief Some other text. To be able to get a feeling for text formating
 
@@ -146,6 +167,8 @@ usually not a good idea when writing a documentation. But for a showcase I think
   }
   
   /*! \brief Some other text. To be able to get a feeling for text formating
+
+    \preliminary
 
 extremeProtectedStaticFunction \a xyz Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
 It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
@@ -429,6 +452,7 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 \value EOh this is Oh
 \value EHappy this is Happy
 \value EDay this is Day
+\omitvalue EIgnoreMe Ignore this
 
 */
 

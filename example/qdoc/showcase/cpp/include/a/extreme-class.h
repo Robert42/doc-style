@@ -32,9 +32,10 @@ namespace A
       EOh,
       EHappy,
       EDay,
+      EIgnoreMe,
     };
     
-    enum ENUM_CPP11(class) Enum2 ENUM_CPP11( : int32)
+    enum class Enum2 : int32
     {
       Oh,
       Happy,
@@ -73,6 +74,9 @@ namespace A
     static void extremeStaticFunction(int);
     
     void baseMemberFunction1();
+
+    void extremeOverloadedFunction();
+    void extremeOverloadedFunction(int i);
     
     template<typename T>
     void extremeTemplateMemberFunction1();
