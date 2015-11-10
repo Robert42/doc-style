@@ -124,6 +124,17 @@ will result in
   \li b
 \endtable
 
+\section2 4.4 Quotes
+
+Some Text before the quotation.
+
+\quotation
+This is a quote. This is a quote. This is a quote. This is a quote. This is a quote. 
+\endquotation
+
+Some Text after the quotation.
+
+
 \section1 Source
 
 This is the source for the current page:
