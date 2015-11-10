@@ -353,6 +353,14 @@ function adaptChapterAndPart()
   h0.replaceWith('<h1 class="page-header">' + h0.text() + '</h1>');
 }
 
+function adaptGenericTables()
+{
+  var tables = $('table.generic');
+  
+  tables.addClass('table');
+  tables.addClass('table-striped');
+}
+
 $(document).ready(function() {
   adaptBreadcrums();
   if(isFile("index.html"))
@@ -381,4 +389,6 @@ $(document).ready(function() {
   adaptVersion();
   
   adaptChapterAndPart();
+  
+  adaptGenericTables();
 });
