@@ -13,5 +13,9 @@ This the source for the current page:
 
 \quotefile showcase/showcase.qdoc
 
+\omit
+\warning YOUU SHOULD NOT BE ABLE TO SEE THIS
+\endomit
+
 
 */

@@ -9,6 +9,8 @@
 \inmodule showcase
 \inheaderfile a/extreme.h
 
+\reentrant
+
 Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
 
@@ -32,6 +34,17 @@ But hey, that's the idea of it.
 
 */
 
+/*! \page thread-safety.html
+ *
+ * \page Thread Safety
+ *
+ * Some smart text about thread safety.
+ *
+ * \keyword reentrant
+ * \keyword thread safe
+ *
+ */
+
 namespace A
 {
 
@@ -40,6 +53,8 @@ namespace A
 Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
 It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
 usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+
+\threadsafe
   */
   void Extreme::abstractBaseMemeberFunction1()
   {
@@ -62,6 +77,8 @@ usually not a good idea when writing a documentation. But for a showcase I think
 \a xyz Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
 It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
 usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+
+\reentrant
   */
   void Extreme::abstractBaseMemeberFunction1(int xyz)
   {
@@ -78,6 +95,7 @@ usually not a good idea when writing a documentation. But for a showcase I think
 extremeSignal \a xyz Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
 It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
 usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
+\nonreentrant
   */
   void Extreme::extremeSignal(int xyz)
   {

@@ -48,6 +48,9 @@ Another example with three keys: \shortcut{\key{Ctrl}+\key{Shift}+\key{P}}.
 
 
 \section2 2.2 Math
+
+\keyword including math
+
 Mathjax is integrated. Inline formulas \math{y^2>2\cdot x^{\sqrt4}} are supported.
 
 \mathline{\int_{x=0}^{42} x\;dx \ne \sum_{i=1}^{n} \frac{1}{\sqrt{i}}}

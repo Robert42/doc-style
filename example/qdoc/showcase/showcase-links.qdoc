@@ -10,6 +10,11 @@
 
 The \c\externalpage command makes it easy to link to external pages, like for example the \l{QDoc Command Index}.
 
+\section1 \\keyword
+
+Here is a link to the \l{including math}{Math page}. The link follows to the keyword defined on the target page.
+
+
 */
 
 /*! \externalpage http://doc.qt.io/qt-5/27-qdoc-commands-alphabetical.html

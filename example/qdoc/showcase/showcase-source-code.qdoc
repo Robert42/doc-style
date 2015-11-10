@@ -8,6 +8,8 @@
 \previouspage Show Text Formating
 \nextpage Showcase Links
 
+
+
 \section1 \\code & \\endcode
 
 You can highlight code as source code using \c{\c{...}}: This is \c{some code}.
@@ -204,6 +206,22 @@ With \c\space
 \snippet showcase/cpp/snippetexample1.cpp Snippet A
 \space
 \snippet showcase/cpp/snippetexample2.cpp Snippet B
+
+
+\section1 \\oldcode & \\newcodecode
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\oldcode & \\newcodecode
+\skipuntil will produce
+\printto \section
+
+will produce:
+
+\oldcode
+    std::cout << "Hello World!" << std::endl;
+\newcode
+    std::cout << "Hello Universe! :)" << std::endl;
+\endcode 
 
 \section1 \\quotefile
 
