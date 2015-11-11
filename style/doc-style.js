@@ -21,6 +21,16 @@
  * SOFTWARE.
  */
 
+
+function exists(selector)
+{
+  wasFound = false;
+  
+  $(selector).each(function(){wasFound=true;});
+  
+  return wasFound;
+}
+
 function adaptBreadcrums()
 {
   $(".content-root>li").remove();
@@ -278,15 +288,6 @@ function adaptNamespaceTypeMemberDetails(parentClass)
   });
 }
 
-function exists(selector)
-{
-  wasFound = false;
-  
-  $(selector).each(function(){wasFound=true;});
-  
-  return wasFound;
-}
-
 function adaptMemberDetails()
 {
   adaptNamespaceTypeMemberDetails("classes");
@@ -334,7 +335,7 @@ function adaptLabels()
 
 function adaptVersion()
 {
-  var version = $("p.lead + div.panel.panel-default > table.table > tbody > tr >  td.memItemLeft:contains('Since:') + td.memItemRight:contains('Qt')");
+  var version = $("div.content-root > p.lead + div.panel.panel-default > table.table > tbody > tr >  td.memItemLeft:contains('Since:') + td.memItemRight:contains('Qt')");
   
   version.each(function(){
     var v = $(this);
@@ -345,6 +346,19 @@ function adaptVersion()
     v.text(t);
     v.addClass("SinceVersion");
   });
+  
+  version = $("div.panel-body >  p:contains('This function was introduced in  Qt')");
+  
+  version.each(function(){
+    var v = $(this);
+    var t = v.text();
+    t = t.replace('Qt', '');
+    t = t.trim();
+    
+    v.text(t);
+    v.addClass("SinceVersion");
+  });
+  
 }
 
 function adaptChapterAndPart()
@@ -369,8 +383,8 @@ $(document).ready(function() {
     removeTitle();
   }else
   {
-    adaptBrief();
     adaptTitle();
+    adaptBrief();
     adaptSidebar();
   }
   
