@@ -106,7 +106,7 @@ namespace A
     void virtualProtecetdBaseMemberFunction1(int) const override;
     void virtualProtecetdBaseMemberFunction2(int) const override;
     
-  protected slot:
+  protected slots:
     void virtualProtecetdSlotBaseMemberFunction1(int) const override;
     void virtualProtecetdSlotBaseMemberFunction2(int) const override;
   };
@@ -131,5 +131,10 @@ namespace A
   class SubClassB : public Extreme{};
   class SubClassC : public Extreme{};
   class SubClassD : public Extreme{};
+
+  static friend void lookAFriend();
   
 }
+
+A::Extreme someFunctionRelatedToExtreme (A::Extreme a, A::Extreme b);
+void lookAFriend();
