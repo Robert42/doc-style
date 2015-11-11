@@ -2,6 +2,7 @@
 
 
 \title Showcase
+\subtitle How a result might look like
 
 \nextpage Showcase Groups
 
@@ -13,6 +14,7 @@ This the source for the current page:
 
 \quotefile showcase/showcase.qdoc
 
+\target testhaha
 \omit
 \warning YOUU SHOULD NOT BE ABLE TO SEE THIS
 \endomit

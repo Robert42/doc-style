@@ -58,6 +58,7 @@ This function
 \a a
 \a b
 
+\sa lookAFriend, testhaha, A::Extreme::abstractBaseMemeberFunction1
  */
 A::Extreme someFunctionRelatedToExtreme (A::Extreme a, A::Extreme b)
 {
@@ -67,7 +68,6 @@ namespace A
 {
 
 /*!
-
  \brief Some other text. To be able to get a feeling for text formating
 
 Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
@@ -79,7 +79,8 @@ usually not a good idea when writing a documentation. But for a showcase I think
 */
   void lookAFriend(){}
 
-  /*! \brief Some other text. To be able to get a feeling for text formating
+  /*!
+\brief Some other text. To be able to get a feeling for text formating
 
 Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
 It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
@@ -103,7 +104,8 @@ usually not a good idea when writing a documentation. But for a showcase I think
   {
   }
   
-  /*! \brief Some other text. To be able to get a feeling for text formating
+  /*!
+\brief Some other text. To be able to get a feeling for text formating
 
 \a xyz Maybe a new paragraph would be also nice. This filling-text doesn't have to make sense.
 It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
