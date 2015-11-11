@@ -50,6 +50,7 @@ But hey, that's the idea of it.
 
 /*!
 \relates A::Extreme
+\since 42.256
 
 \brief operator + for extreeme
 
@@ -136,6 +137,8 @@ usually not a good idea when writing a documentation. But for a showcase I think
 It joust should be a lot of it. In this case, I prefer Quantity over Quality. That's
 usually not a good idea when writing a documentation. But for a showcase I think this should be ok.
 
+
+\sa abstractBaseMemeberFunction1()
   */
   void Extreme::extremeOverloadedFunction(int i)
   {
