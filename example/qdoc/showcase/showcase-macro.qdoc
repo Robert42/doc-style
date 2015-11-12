@@ -1,4 +1,5 @@
-/*! \group showcase-macros
+/*! \page showcase-macros
+\ingroup showcase
 
 
 \title Showcase Macros
@@ -7,18 +8,60 @@
 \previouspage Showcase
 \nextpage Showcase Groups
 
-\brief Landing Page
+\brief Macros
 
-This showcase demonstrates, how different qdoc features look in the browser after applying the style.
+The qdocconf files provided by this qdoc-style also provide some macros.
 
-This the source for the current page:
+\section1 \\shortcut & \\key
 
-\quotefile showcase/showcase.qdoc
+\c{\shortcut{\key{some-key}}} will display some text as a shortcut \shortcut{\key{some-key}}.
 
-\target testhaha
-\omit
-\warning YOUU SHOULD NOT BE ABLE TO SEE THIS
-\endomit
+For example \c{\shortcut{\key{Ctrl}+\key{Shift}+\key{C}}}  is displayed as \shortcut{\key{Ctrl}+\key{Shift}+\key{C}}
+
+\section1 \\math & \\mathline
+
+You can use math formular, like \c\math{42\cdot x^3 + \frac{\sqrt{t}}{2^n}} for a result like \math{42\cdot x^3 + \frac{\sqrt{t}}{2^n}}
+
+\section1 \\mark
+
+Mark some text,as if it was marked with a \mark{textmarker}.
+
+\section1 \\s
+
+Draw some text as \s{striked through}.
+
+\section1 \\del
+
+Draw some text as \s{deleted}. The difference to \c\s is, that one css style might tint deleted text red while a simple stroke though text will not changing the color of the text.
+
+\section1 \\ins
+
+Draw some text as \ins{inserted}. The difference to smiply underlined text is, that one css style might tint inserted text green  while a simple underlined though text will not changing the color of the text.
+
+\section1 \\abbr
+
+Abbreviations are also easy to handle. so the user can known the difference between a \abbr{Künstliches Neuronales Netz}{KNN} and a \abbr{K Nearest Neighbor}{KNN}
+
+\section1 \\space
+
+\c\space just outputs a single whitespace character. Usecase:
+
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\space
+\skipuntil will produce
+\printto \section
+
+will produce
+
+Without \c\space
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+\snippet showcase/cpp/snippetexample2.cpp Snippet B
+
+With \c\space
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+\space
+\snippet showcase/cpp/snippetexample2.cpp Snippet B
 
 
 */
