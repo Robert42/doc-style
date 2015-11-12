@@ -1,10 +1,11 @@
-/*! \group showcase
+/*! \group showcase-macros
 
 
-\title Showcase
-\subtitle How a result might look like
+\title Showcase Macros
+\subtitle New functionality added by this style
 
-\nextpage Showcase Macros
+\previouspage Showcase
+\nextpage Showcase Groups
 
 \brief Landing Page
 

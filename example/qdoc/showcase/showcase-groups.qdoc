@@ -5,26 +5,15 @@
 
 \brief This Page :)
 
-\previouspage Showcase
+\previouspage Showcase Macros
 \nextpage Show Text Formating
 
-You can use groups to define modules of your software.
+This package has introduced some new macros. This is a small overview about them.
 
-With the command \c\annotatedlist you can show all elements of a group.
-For example the group of all pages of this showcase:
-
-\annotatedlist showcase
-
-Here's the content of a second group with some C++ Code:
-
-\annotatedlist cpp-group
-
-Elements can be in multiple groups:
-
-\annotatedlist cpp-group2
+TODO
 
 
-\quotefile showcase/showcase-groups.qdoc
+\quotefile showcase/showcase-macro.qdoc
 
 */
 
