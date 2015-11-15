@@ -34,3 +34,9 @@ td.memItemRight
 {
   width: 100%;
 }
+
+div.content-root > h1.title + p.lead + div.table > table.propsummary > tbody > tr > td > ul
+{
+  list-style-type: "» ";
+}
+
