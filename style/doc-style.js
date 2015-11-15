@@ -376,6 +376,14 @@ function adaptGenericTables()
   tables.addClass('table-striped');
 }
 
+function adaptListOfAllMembersTables()
+{
+  table = $("div.content-root > h1.title + p.lead + div.table > table.propsummary");
+  
+  table.addClass("table");
+  table.addClass("table-bordered");
+}
+
 $(document).ready(function() {
   adaptBreadcrums();
   if(isFile("index.html"))
@@ -406,4 +414,5 @@ $(document).ready(function() {
   adaptChapterAndPart();
   
   adaptGenericTables();
+  adaptListOfAllMembersTables();
 });
