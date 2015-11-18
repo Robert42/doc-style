@@ -23,6 +23,12 @@
 sources.fileextensions += *.cpp
 sources.fileextensions += *.inl
 headers.fileextensions += *.h
+examples.fileextensions += "*.c"
+examples.fileextensions += "*.cpp"
+examples.fileextensions += "*.h"
+examples.fileextensions += "*.hpp"
+examples.fileextensions += "*.inl"
+examples.fileextensions += "CMakeLists.txt"
 
 Cpp.ignoretokens += extern
 
