@@ -1,0 +1,15 @@
+/*! \example showcase/cpp/my-sample
+\ingroup showcase
+
+\title Show C++ Example
+
+\brief A demonstration how to integrate examples into the documentation.
+
+\previouspage Show generatelist
+\nextpage Show Warning and Note
+
+This shows how to add a small example to the qdoc documentation.
+
+\quotefile showcase/showcase-example.qdoc
+
+*/
