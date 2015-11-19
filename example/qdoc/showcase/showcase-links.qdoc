@@ -14,6 +14,13 @@ The \c\externalpage command makes it easy to link to external pages, like for ex
 
 Here is a link to the \l{including math}{Math page}. The link follows to the keyword defined on the target page.
 
+\section1 Links to other docuemtation.
+
+For example, here's a link to the QTextEncoder class of the Qt documentation.
+
+This achieved by adding the qtcore.index file from the qt sdk to the
+\l{http://doc.qt.io/qt-5/25-qdoc-configuration-derivedprojects.html#indexes}{indexes configuration} variable
+
 
 */
 

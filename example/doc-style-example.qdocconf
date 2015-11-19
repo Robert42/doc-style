@@ -4,6 +4,8 @@ include(doc-style-example-html.qdocconf)
 outputformats = HTML
 outputdir = html
 
+indexes += $QT_DOCS_DIR/qtcore/qtcore.index
+
 project = doc-style
 descripton = "An example for the doc-style"
 
