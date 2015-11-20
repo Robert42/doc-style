@@ -34,6 +34,8 @@ namespace MyNamespace
   */
   int MyClass::myFunction(int x) const
   {
+    char letter = '4' + std::string("2");
+  
     return myVar - x + 42;
   }
 }

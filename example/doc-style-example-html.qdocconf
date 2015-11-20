@@ -1,7 +1,9 @@
 HTML.stylesheets += style/third-party/bootstrap/bootstrap.css
 HTML.stylesheets += style/third-party/sticky-footer.css
+HTML.stylesheets += style/code-style.css
 HTML.headerstyles += "<link rel='stylesheet' href='./style/bootstrap.css'>\n"
 HTML.headerstyles += "<link rel='stylesheet' href='./style/sticky-footer.css'>\n"
+HTML.headerstyles += "<link rel='stylesheet' href='./style/code-style.css'>\n"
 
 HTML.postheader = "\n" \
                   "<!-- POSTHEADER -->\n" \

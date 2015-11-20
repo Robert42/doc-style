@@ -18,8 +18,16 @@ Here is a link to the \l{including math}{Math page}. The link follows to the key
 
 For example, here's a link to the QTextEncoder class of the Qt documentation.
 
-This achieved by adding the qtcore.index file from the qt sdk to the
+This is achieved by adding the qtcore.index file from the qt sdk to the
 \l{http://doc.qt.io/qt-5/25-qdoc-configuration-derivedprojects.html#indexes}{indexes configuration} variable
+
+\section1 Links from Code
+
+\snippet showcase/cpp/code.cpp 0
+
+
+
+\quotefile showcase/showcase-links.qdoc
 
 
 */
