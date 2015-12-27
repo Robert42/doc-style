@@ -304,36 +304,19 @@ function adaptMemberDetails()
   adaptTablesInPanel("types", ".valuelist");
 }
 
-function _adaptLabel(label, replaceWith, labelStyle)
-{
-  $("code:contains('"+label+"')").each(function(){
-    var rightAligned = "style='float:right'";
-    var labelHtml = "<span class='label "+labelStyle+"'"+rightAligned+">"+replaceWith+"</span>";
-    $(this).replaceWith(labelHtml);
-  });
-}
-
-function adaptLabel(label)
-{
-  _adaptLabel("["+label+"]", label, "label-default");
-}
 
 function adaptLabels()
 {
-  adaptLabel("protected");
-  adaptLabel("static");
-  adaptLabel("static protected");
-  adaptLabel("signal");
-  adaptLabel("slot");
-  adaptLabel("protected slot");
-  adaptLabel("virtual");
-  adaptLabel("virtual protected");
-  adaptLabel("virtual protected slot");
-  adaptLabel("pure virtual");
-  adaptLabel("pure virtual protected");
-  adaptLabel("override");
-  adaptLabel("final");
-  _adaptLabel("(preliminary) ", "preliminary", "label-warning");
+  $("span.label").each(function(){
+    var text = $(this).text();
+    if(text.indexOf("preliminary") >= 0 || text.indexOf("deprecated") >= 0 || text.indexOf("obsolete")>=0)
+      $(this).addClass("label-warning");
+    else
+      $(this).addClass("label-default");
+    $(this).text($(this).text().replace(/\(([^)]+)\)/g, "$1"));
+    $(this).text($(this).text().replace(/\[([^)]+)\]/g, "$1"));
+    $(this).css("float", "right");
+  });
   
   $("tr > td > span.label").each(function(){
     td = $(this).parent();
