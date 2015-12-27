@@ -5,6 +5,7 @@ outputformats = HTML
 outputdir = html
 
 indexes += $QT_DOCS_DIR/qtcore/qtcore.index
+unlistedmodules += QtCore qtcore
 
 project = doc-style
 descripton = "An example for the doc-style"
