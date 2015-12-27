@@ -307,13 +307,9 @@ function adaptMemberDetails()
 function adaptLabel(label)
 {
   $("code:contains('["+label+"]')").each(function(){
-    var code = $(this);
-    var parent = code.parent();
-    code.remove();
-    
     var rightAligned = "style='float:right'";
     var labelHtml = "<span class='label label-default'"+rightAligned+">"+label+"</span>";
-    parent.html(parent.html() + labelHtml);
+    $(this).replaceWith(labelHtml);
   });
 }
 
