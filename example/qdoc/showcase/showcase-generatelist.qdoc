@@ -24,11 +24,27 @@
 
 
 
+\section1 classhierarchy
 
-\section1 classesbymodule
+\generatelist classhierarchy
+
+
+
+
+\section1 classesbymodule showcase
 
 \generatelist classesbymodule showcase
 
+
+\section1 classesbymodule doc-style
+
+\generatelist classesbymodule doc-style
+
+
+
+\section1 cpp-modules
+
+\generatelist cpp-modules
 
 
 
@@ -45,6 +61,25 @@
 
 
 
+\section1 namespaces
+
+\generatelist namespaces
+
+
+
+\section1 obsoleteclasses
+
+\generatelist obsoleteclasses
+
+
+
+
+\section1 obsoletecppmembers
+
+\generatelist obsoletecppmembers
+
+
+
 
 \section1 overviews
 
@@ -54,11 +89,6 @@
 
 
 
-\section1 Show Namespace Overview
-
-This section shows, how a namespace overview looks like.
-
-\generatelist namespaces
 
 
 This the source for the current page:
