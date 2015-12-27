@@ -304,13 +304,18 @@ function adaptMemberDetails()
   adaptTablesInPanel("types", ".valuelist");
 }
 
-function adaptLabel(label)
+function _adaptLabel(label, replaceWith, labelStyle)
 {
-  $("code:contains('["+label+"]')").each(function(){
+  $("code:contains('"+label+"')").each(function(){
     var rightAligned = "style='float:right'";
-    var labelHtml = "<span class='label label-default'"+rightAligned+">"+label+"</span>";
+    var labelHtml = "<span class='label "+labelStyle+"'"+rightAligned+">"+replaceWith+"</span>";
     $(this).replaceWith(labelHtml);
   });
+}
+
+function adaptLabel(label)
+{
+  _adaptLabel("["+label+"]", label, "label-default");
 }
 
 function adaptLabels()
@@ -323,10 +328,17 @@ function adaptLabels()
   adaptLabel("protected slot");
   adaptLabel("virtual");
   adaptLabel("virtual protected");
+  adaptLabel("virtual protected slot");
   adaptLabel("pure virtual");
   adaptLabel("pure virtual protected");
   adaptLabel("override");
   adaptLabel("final");
+  _adaptLabel("(preliminary) ", "preliminary", "label-warning");
+  
+  $("tr > td > span.label").each(function(){
+    td = $(this).parent();
+    $(this).detach().appendTo(td.next());
+  });
 }
 
 function adaptVersion()
