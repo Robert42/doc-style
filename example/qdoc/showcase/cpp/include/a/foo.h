@@ -7,4 +7,7 @@ public:
   void functionA();
 };
 
+namespace InnerNamespace
+{
+}
 }
