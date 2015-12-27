@@ -354,9 +354,11 @@ function adaptVersion()
 
 function adaptChapterAndPart()
 {
-  var h0 = $('h0');
-  
-  h0.replaceWith('<h1 class="page-header">' + h0.text() + '</h1>');
+  $('h0').each(function(){
+    var h0 = $(this);
+    
+    h0.replaceWith('<h1 class="page-header">' + h0.text() + '</h1>');
+  });
 }
 
 function adaptGenericTables()
