@@ -5,7 +5,7 @@ namespace A
 {
   void globalFunction__();
   
-  class Extreme : public QObject, public Base
+  class Extreme final : public QObject, public Base
   {
     Q_OBJECT
     Q_PROPERTY(Foo foo READ foo WRITE setFoo RESET resetFoo NOTIFY fooChanged);
@@ -104,7 +104,7 @@ namespace A
     
   protected:
     void virtualProtecetdBaseMemberFunction1(int) const override;
-    void virtualProtecetdBaseMemberFunction2(int) const override;
+    void virtualProtecetdBaseMemberFunction2(int) const override final;
     
   protected slots:
     void virtualProtecetdSlotBaseMemberFunction1(int) const override;
