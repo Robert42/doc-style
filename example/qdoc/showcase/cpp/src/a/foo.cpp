@@ -42,4 +42,18 @@ void Foo::functionA()
 {
 }
 
+/*! \variable A::VariableInNamespaceA
+\brief Documentation for variable VariableInNamespaceA
+
+Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
+/*! \variable A::VariableInNamespaceA2
+\brief Documentation for variable VariableInNamespaceA2
+
+Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
 }

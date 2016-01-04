@@ -21,6 +21,12 @@ namespace A
     template<typename T>
     class InnerTemplateClass;
     
+    struct InnerStruct
+    {
+      void innerStructMethod();
+      static InnerStruct innerStructStaticMethod();
+    };
+    
     friend class Parent;
     friend globalFunction__;
     friend void Base::baseMemberFunction1();

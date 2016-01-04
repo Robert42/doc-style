@@ -423,6 +423,37 @@ void Extreme::InnerClass::hello()
 {
 }
 
+/*!
+\class A::Extreme::InnerStruct
+\brief This is the Inner struct  
+\inmodule showcase
+\inheaderfile a/extreme.h
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
+/*!
+\brief This is the Inner struct' method
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text. 
+
+*/
+void Extreme::InnerStruct::innerStructMethod()
+{
+}
+
+/*!
+\brief This is the Inner struct' static method
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text. 
+
+*/
+void Extreme::InnerStruct::innerStructStaticMethod()
+{
+}
 
 /*! \brief This is a short description
 \obsolete
