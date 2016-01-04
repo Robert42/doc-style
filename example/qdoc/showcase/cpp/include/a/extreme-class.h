@@ -46,6 +46,7 @@ namespace A
     
   public:
     int memberVariable1;
+    int memberVariable3  =  42;
     static int memberVariableStatic1;
     
   protected:

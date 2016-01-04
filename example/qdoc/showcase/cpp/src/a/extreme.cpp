@@ -349,6 +349,14 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 */
 int memberVariable2;
 
+/*! 
+\variable Extreme::memberVariable3
+\brief This is the static variable memberVariable3
+
+ Some other text. To be able to get a feeling for text formating, you need a lot of text to get a feeling for it.
+So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
+*/
+
 /*!
 \brief This is the ctor Extreme::Extreme
 
