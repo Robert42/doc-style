@@ -38,7 +38,7 @@ HTML.footer = "\n" \
               "  <div class='container'>\n" \
               "    <center>\n" \
               "      <p class='text-muted'>\n" \
-              "        &copy; Robert Hildebrandt  2015\n" \
+              "        &copy; Robert Hildebrandt  2016\n" \
               "        <br>\n" \
               "        Documentation generated using the <a href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.\n" \
               "        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;\n" \
