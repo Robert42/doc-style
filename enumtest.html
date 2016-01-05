@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- enum-test.qdoc -->
+  <title>EnumTest Namespace | doc-style </title>
+<link rel='stylesheet' href='./style/doc-style.css'>
+<link rel='stylesheet' href='./style/bootstrap.css'>
+<link rel='stylesheet' href='./style/sticky-footer.css'>
+<link rel='stylesheet' href='./style/code-style.css'>
+<script src='./scripts/jquery-1.11.3.min.js'></script>
+<script src='./scripts/doc-style.js'></script>
+<script src='./scripts/bootstrap.js'></script>
+<script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body>
+
+<!-- POSTHEADER -->
+
+<nav class='navbar navbar-default navbar-static-top'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <a class='navbar-brand' href='index.html'>Welcome</a>
+    </div>
+    <ul class='nav navbar-nav'>
+      <li><a href='https://github.com/Robert42/doc-style'>GitHub Page</a></li>
+      <li><a href='showcase.html'>Showcase</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-lg-9 col-md-10 content-root'>
+<!-- END POSTHEADER -->
+
+<li>EnumTest Namespace</li>
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#types">Types</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">EnumTest Namespace</h1>
+<!-- $$$EnumTest-brief -->
+<p>This namespace is used to test the support of c++11 enumerations. <a href="#details">More...</a></p>
+<!-- @@@EnumTest -->
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Header:</td><td class="memItemRight bottomAlign"> <span class="preprocessor">#include &lt;EnumTest&gt;</span>
+</td></tr></table></div><ul>
+</ul>
+<a name="types"></a>
+<h2 id="types">Types</h2>
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> enum </td><td class="memItemRight bottomAlign"><b><a href="enumtest.html#ByteEnum-enum">ByteEnum</a></b> { ByteA, ByteB, ByteC }</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> enum </td><td class="memItemRight bottomAlign"><b><a href="enumtest.html#PlainSimpleEnum-enum">PlainSimpleEnum</a></b> { SimpleA, SimpleB, SimpleC }</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> enum class </td><td class="memItemRight bottomAlign"><b><a href="enumtest.html#StrongByteEnum-enum">StrongByteEnum</a></b> { A, B, C }</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> enum class </td><td class="memItemRight bottomAlign"><b><a href="enumtest.html#StrongEnum-enum">StrongEnum</a></b> { A, B, C }</td></tr>
+<tr><td class="memItemLeft rightAlign topAlign"> enum class </td><td class="memItemRight bottomAlign"><b><a href="enumtest.html#StrongIntEnum-enum">StrongIntEnum</a></b> { A, B, C }</td></tr>
+</table></div>
+<a name="details"></a>
+<!-- $$$EnumTest-description -->
+<div class="descr">
+<h2 id="details">Detailed Description</h2>
+<p>This namespace is used to test the support of c++11 enumerations.</p>
+<p>It contains the following enumerations:</p>
+<ul>
+<li><a href="enumtest.html#PlainSimpleEnum-enum">PlainSimpleEnum</a></li>
+<li><a href="enumtest.html#ByteEnum-enum">ByteEnum</a></li>
+<li><a href="enumtest.html#StrongEnum-enum">StrongEnum</a></li>
+<li><a href="enumtest.html#StrongByteEnum-enum">StrongByteEnum</a></li>
+<li><a href="enumtest.html#StrongIntEnum-enum">StrongIntEnum</a></li>
+</ul>
+<p>If some of them are shown as class or not shown in this namespace overview at all. C++11 macros are not supported yet.</p>
+</div>
+<!-- @@@EnumTest -->
+<div class="types">
+<h2>Type Documentation</h2>
+<!-- $$$ByteEnum$$$ByteA$$$ByteB$$$ByteC -->
+<h3 class="fn" id="ByteEnum-enum"><a name="ByteEnum-enum"></a>enum EnumTest::<span class="name">ByteEnum</span> : unsigned char</h3>
+<p>An enumeration using new C++11 features: The underlying type is <code>unsigned char</code></p>
+<div class="table"><table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><code>EnumTest::ByteA</code></td><td class="topAlign"><code>0</code></td><td class="topAlign">The first value</td></tr>
+<tr><td class="topAlign"><code>EnumTest::ByteB</code></td><td class="topAlign"><code>1</code></td><td class="topAlign">The second value</td></tr>
+<tr><td class="topAlign"><code>EnumTest::ByteC</code></td><td class="topAlign"><code>2</code></td><td class="topAlign">The third value</td></tr>
+</table></div>
+<!-- @@@ByteEnum -->
+<!-- $$$PlainSimpleEnum$$$SimpleA$$$SimpleB$$$SimpleC -->
+<h3 class="fn" id="PlainSimpleEnum-enum"><a name="PlainSimpleEnum-enum"></a>enum EnumTest::<span class="name">PlainSimpleEnum</span></h3>
+<p>A simple enumeration without any c++11 features</p>
+<div class="table"><table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><code>EnumTest::SimpleA</code></td><td class="topAlign"><code>0</code></td><td class="topAlign">The first value</td></tr>
+<tr><td class="topAlign"><code>EnumTest::SimpleB</code></td><td class="topAlign"><code>1</code></td><td class="topAlign">The second value</td></tr>
+<tr><td class="topAlign"><code>EnumTest::SimpleC</code></td><td class="topAlign"><code>2</code></td><td class="topAlign">The third value</td></tr>
+</table></div>
+<!-- @@@PlainSimpleEnum -->
+<!-- $$$StrongByteEnum$$$A$$$B$$$C -->
+<h3 class="fn" id="StrongByteEnum-enum"><a name="StrongByteEnum-enum"></a>enum class EnumTest::<span class="name">StrongByteEnum</span> : ByteEnum</h3>
+<p>An enumeration using new C++11 features: A strong typed enumeration with <code>ByteEnum</code> as underlying type.</p>
+<div class="table"><table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><code>EnumTest::StrongByteEnum::A</code></td><td class="topAlign"><code>0</code></td><td class="topAlign">The first value</td></tr>
+<tr><td class="topAlign"><code>EnumTest::StrongByteEnum::B</code></td><td class="topAlign"><code>1</code></td><td class="topAlign">The second value</td></tr>
+<tr><td class="topAlign"><code>EnumTest::StrongByteEnum::C</code></td><td class="topAlign"><code>2</code></td><td class="topAlign">The third value</td></tr>
+</table></div>
+<!-- @@@StrongByteEnum -->
+<!-- $$$StrongEnum$$$A$$$B$$$C -->
+<h3 class="fn" id="StrongEnum-enum"><a name="StrongEnum-enum"></a>enum class EnumTest::<span class="name">StrongEnum</span></h3>
+<p>An enumeration using new C++11 features: A strong typed enumeration.</p>
+<div class="table"><table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><code>EnumTest::StrongEnum::A</code></td><td class="topAlign"><code>0</code></td><td class="topAlign">The first value</td></tr>
+<tr><td class="topAlign"><code>EnumTest::StrongEnum::B</code></td><td class="topAlign"><code>1</code></td><td class="topAlign">The second value</td></tr>
+<tr><td class="topAlign"><code>EnumTest::StrongEnum::C</code></td><td class="topAlign"><code>2</code></td><td class="topAlign">The third value</td></tr>
+</table></div>
+<!-- @@@StrongEnum -->
+<!-- $$$StrongIntEnum$$$A$$$B$$$C -->
+<h3 class="fn" id="StrongIntEnum-enum"><a name="StrongIntEnum-enum"></a>enum class EnumTest::<span class="name">StrongIntEnum</span> : int</h3>
+<p>An enumeration using new C++11 features: A strong typed enumeration with <code>int</code> as underlying type.</p>
+<div class="table"><table class="valuelist"><tr valign="top" class="odd"><th class="tblConst">Constant</th><th class="tblval">Value</th><th class="tbldscr">Description</th></tr>
+<tr><td class="topAlign"><code>EnumTest::StrongIntEnum::A</code></td><td class="topAlign"><code>0</code></td><td class="topAlign">The first value</td></tr>
+<tr><td class="topAlign"><code>EnumTest::StrongIntEnum::B</code></td><td class="topAlign"><code>1</code></td><td class="topAlign">The second value</td></tr>
+<tr><td class="topAlign"><code>EnumTest::StrongIntEnum::C</code></td><td class="topAlign"><code>2</code></td><td class="topAlign">The third value</td></tr>
+</table></div>
+<!-- @@@StrongIntEnum -->
+</div>
+
+<!-- FOOTER -->
+    </div> <!-- content-root -->
+    <div class='col-lg-3 col-md-2 sidebar-root'>
+    </div> <!-- sidebar-root -->
+  </div> <!-- row -->
+</div> <!-- container-fluid -->
+
+<footer class='footer'>
+  <div class='container'>
+    <center>
+      <p class='text-muted'>
+        &copy; Robert Hildebrandt  2015
+        <br>
+        Documentation generated using the <a href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using <a href='http://jquery.com/'>jQuery</a>
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using the <a href='http://getbootstrap.com/'>Bootstrap</a> framework.
+      </p>
+    </center>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+</body>
+</html>

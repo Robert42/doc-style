@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- getting-started-001.qdoc -->
+  <title>Write some C++ Code | doc-style </title>
+<link rel='stylesheet' href='./style/doc-style.css'>
+<link rel='stylesheet' href='./style/bootstrap.css'>
+<link rel='stylesheet' href='./style/sticky-footer.css'>
+<link rel='stylesheet' href='./style/code-style.css'>
+<script src='./scripts/jquery-1.11.3.min.js'></script>
+<script src='./scripts/doc-style.js'></script>
+<script src='./scripts/bootstrap.js'></script>
+<script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body>
+
+<!-- POSTHEADER -->
+
+<nav class='navbar navbar-default navbar-static-top'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <a class='navbar-brand' href='index.html'>Welcome</a>
+    </div>
+    <ul class='nav navbar-nav'>
+      <li><a href='https://github.com/Robert42/doc-style'>GitHub Page</a></li>
+      <li><a href='showcase.html'>Showcase</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-lg-9 col-md-10 content-root'>
+<!-- END POSTHEADER -->
+
+<li>Write some C++ Code</li>
+  <link rel="prev" href="getting-started.html" />
+  <link rel="next" href="getting-started-002.html" />
+  <link rel="start" href="getting-started.html" />
+<p class="naviNextPrevious headerNavi">
+<a class="prevPage" href="getting-started.html">Getting Started</a>
+<a class="nextPage" href="getting-started-002.html">Add C++ Docu</a>
+</p><p/>
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#create-directories">Create Directories</a></li>
+<li class="level1"><a href="#create-header-file">Create Header File</a></li>
+<li class="level1"><a href="#create-source-file">Create Source File</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">Write some C++ Code</h1>
+<span class="subtitle"></span>
+<!-- $$$getting-started-001.html-description -->
+<div class="descr"> <a name="details"></a>
+<a name="create-directories"></a>
+<h2 id="create-directories">Create Directories</h2>
+<p>First we create a simple C++ project.</p>
+<ol class="1">
+<li>Create a folder as project root directory<pre class="cpp">mkdir example<span class="operator">-</span>project
+cd example<span class="operator">-</span>project</pre>
+</li>
+<li>Create two subfolders, one for the source, one for the headers:<pre class="cpp">mkdir <span class="keyword">include</span>
+mkdir src</pre>
+</li>
+</ol>
+<p>You can also use different directory structure. You just have to be consistent.</p>
+<a name="create-header-file"></a>
+<h2 id="create-header-file">Create Header File</h2>
+<p>Create a C++ Headerfile <b>include/my-class.h</b></p>
+<pre class="cpp"><span class="keyword">namespace</span> MyNamespace
+{
+  <span class="keyword">class</span> MyClass
+  {
+  <span class="keyword">public</span>:
+    <span class="type">int</span> myVar;
+
+    <span class="type">int</span> myFunction() <span class="keyword">const</span>;
+  };
+}</pre>
+<a name="create-source-file"></a>
+<h2 id="create-source-file">Create Source File</h2>
+<p>Create a C++ Sourcefile <b>include/my-class.cpp</b></p>
+<pre class="qml"><span class="preprocessor">#include &lt;my-class.h&gt;</span>
+
+<span class="keyword">namespace</span> MyNamespace
+{
+  <span class="type">int</span> MyClass<span class="operator">::</span>myFunction(<span class="type">int</span> x) <span class="keyword">const</span>
+  {
+    <span class="type">char</span> letter <span class="operator">=</span> <span class="char">'4'</span> <span class="operator">+</span> std<span class="operator">::</span>string(<span class="string">&quot;2&quot;</span>);
+
+    <span class="keyword">return</span> myVar <span class="operator">-</span> x <span class="operator">+</span> <span class="number">42</span>;
+  }
+}</pre>
+</div>
+<!-- @@@getting-started-001.html -->
+<p class="naviNextPrevious footerNavi">
+<a class="prevPage" href="getting-started.html">Getting Started</a>
+<a class="nextPage" href="getting-started-002.html">Add C++ Docu</a>
+</p>
+
+<!-- FOOTER -->
+    </div> <!-- content-root -->
+    <div class='col-lg-3 col-md-2 sidebar-root'>
+    </div> <!-- sidebar-root -->
+  </div> <!-- row -->
+</div> <!-- container-fluid -->
+
+<footer class='footer'>
+  <div class='container'>
+    <center>
+      <p class='text-muted'>
+        &copy; Robert Hildebrandt  2015
+        <br>
+        Documentation generated using the <a href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using <a href='http://jquery.com/'>jQuery</a>
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using the <a href='http://getbootstrap.com/'>Bootstrap</a> framework.
+      </p>
+    </center>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+</body>
+</html>

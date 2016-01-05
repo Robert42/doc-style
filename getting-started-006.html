@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- getting-started-006.qdoc -->
+  <title>Add Python script | doc-style </title>
+<link rel='stylesheet' href='./style/doc-style.css'>
+<link rel='stylesheet' href='./style/bootstrap.css'>
+<link rel='stylesheet' href='./style/sticky-footer.css'>
+<link rel='stylesheet' href='./style/code-style.css'>
+<script src='./scripts/jquery-1.11.3.min.js'></script>
+<script src='./scripts/doc-style.js'></script>
+<script src='./scripts/bootstrap.js'></script>
+<script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body>
+
+<!-- POSTHEADER -->
+
+<nav class='navbar navbar-default navbar-static-top'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <a class='navbar-brand' href='index.html'>Welcome</a>
+    </div>
+    <ul class='nav navbar-nav'>
+      <li><a href='https://github.com/Robert42/doc-style'>GitHub Page</a></li>
+      <li><a href='showcase.html'>Showcase</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-lg-9 col-md-10 content-root'>
+<!-- END POSTHEADER -->
+
+<li>Add Python script</li>
+  <link rel="prev" href="getting-started-005.html" />
+  <link rel="start" href="getting-started.html" />
+<p class="naviNextPrevious headerNavi">
+<a class="prevPage" href="getting-started-005.html">Add HTML Style</a>
+</p><p/>
+<div class="sidebar"><div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">Add Python script</h1>
+<span class="subtitle"></span>
+<!-- $$$getting-started-006.html-description -->
+<div class="descr"> <a name="details"></a>
+<p>The python script introduced here shows, how qdoc can be called to generate</p>
+<pre class="qml">scriptDir = os.path.dirname(os.path.abspath(__file__))</pre>
+<p>This line determines the location of the current python scriptfile</p>
+<pre class="qml">docStyleDir = os.path.abspath(os.path.join(scriptDir, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;));</pre>
+<p>The <code>docStyleDir</code> variable contains now the path to the <code>doc-style</code> root directory.</p>
+<p>In this case it's easy, because the script file and the doc-style are both within the same git repository. <br />
+ Other projects may use the doc-style as a subproject to be also able to use a hardcoded relative path. Alternatively you can also use system wide environment variables.</p>
+<pre class="qml">os.environ[&quot;DOCSTYLE_DIR&quot;] = os.path.normpath(docStyleDir);</pre>
+<p>The absolute path to doc-style must be stored in the environment variable <code>DOCSTYLE_DIR</code>. <br />
+ Note, that this should be an absolute path. Also on windows the variable should contain backslashes instead of forward slashes. This is done using the function <code>os.path.normpath</code> function.</p>
+<pre class="qml">subprocess.call([&quot;qdoc&quot;, os.path.join(scriptDir, &quot;example.qdocconf&quot;)])</pre>
+<p>Finally, the <i>qdoc</i> is called. This line expects qdoc to be within a directory in the <code>PATH</code> environment variable. But you can also give the full path if you whish.</p>
+<p>Summary of the whole python script</p>
+<pre class="qml">import subprocess
+import os
+
+scriptDir = os.path.dirname(os.path.abspath(__file__))
+
+docStyleDir = os.path.abspath(os.path.join(scriptDir, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;));
+
+os.environ[&quot;DOCSTYLE_DIR&quot;] = os.path.normpath(docStyleDir);
+
+subprocess.call([&quot;qdoc&quot;, os.path.join(scriptDir, &quot;example.qdocconf&quot;)])</pre>
+</div>
+<!-- @@@getting-started-006.html -->
+<p class="naviNextPrevious footerNavi">
+<a class="prevPage" href="getting-started-005.html">Add HTML Style</a>
+</p>
+
+<!-- FOOTER -->
+    </div> <!-- content-root -->
+    <div class='col-lg-3 col-md-2 sidebar-root'>
+    </div> <!-- sidebar-root -->
+  </div> <!-- row -->
+</div> <!-- container-fluid -->
+
+<footer class='footer'>
+  <div class='container'>
+    <center>
+      <p class='text-muted'>
+        &copy; Robert Hildebrandt  2015
+        <br>
+        Documentation generated using the <a href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using <a href='http://jquery.com/'>jQuery</a>
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using the <a href='http://getbootstrap.com/'>Bootstrap</a> framework.
+      </p>
+    </center>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+</body>
+</html>

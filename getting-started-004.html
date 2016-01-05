@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- getting-started-004.qdoc -->
+  <title>Add QDoc Config | doc-style </title>
+<link rel='stylesheet' href='./style/doc-style.css'>
+<link rel='stylesheet' href='./style/bootstrap.css'>
+<link rel='stylesheet' href='./style/sticky-footer.css'>
+<link rel='stylesheet' href='./style/code-style.css'>
+<script src='./scripts/jquery-1.11.3.min.js'></script>
+<script src='./scripts/doc-style.js'></script>
+<script src='./scripts/bootstrap.js'></script>
+<script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body>
+
+<!-- POSTHEADER -->
+
+<nav class='navbar navbar-default navbar-static-top'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <a class='navbar-brand' href='index.html'>Welcome</a>
+    </div>
+    <ul class='nav navbar-nav'>
+      <li><a href='https://github.com/Robert42/doc-style'>GitHub Page</a></li>
+      <li><a href='showcase.html'>Showcase</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-lg-9 col-md-10 content-root'>
+<!-- END POSTHEADER -->
+
+<li>Add QDoc Config</li>
+  <link rel="prev" href="getting-started-003.html" />
+  <link rel="next" href="getting-started-005.html" />
+  <link rel="start" href="getting-started.html" />
+<p class="naviNextPrevious headerNavi">
+<a class="prevPage" href="getting-started-003.html">Add Index Page</a>
+<a class="nextPage" href="getting-started-005.html">Add HTML Style</a>
+</p><p/>
+<div class="sidebar"><div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">Add QDoc Config</h1>
+<span class="subtitle"></span>
+<!-- $$$getting-started-004.html-description -->
+<div class="descr"> <a name="details"></a>
+<pre class="qml">include($DOCSTYLE_DIR/doc-style-basics.qdocconf)</pre>
+<p>First we need to include the doc-style. <code>$DOCSTYLE_DIR</code> must be an environment variable pointing to the directory, where doc-style is located.</p>
+<pre class="qml">outputformats = HTML
+outputdir = html</pre>
+<p>With the variable <code>outputformats</code>, we tell qdoc, that we want generate an HTML documentation. The <code>outputdir</code> variable is used to define the directory, where the generated html content should be located. <br />
+ If you are using a version control system, it might be a good idea to let the version control system ignore this outputdir.</p>
+<pre class="qml">exampledirs += manual</pre>
+<p>The <code>exampledirs</code> variable stores the directories, where qdoc will search for *.qdoc files.</p>
+<pre class="qml">sourcedirs += ../src</pre>
+<p>The <code>sourcedirs</code> variable stores the directories, where qdoc will search for qdoc comments within source files.</p>
+<pre class="qml">headerdirs += ../include</pre>
+<p>The <code>headerdirs</code> variable stores the directories, where qdoc will search for header files.</p>
+<p>Here the whole minimalistic qdocconf file:</p>
+<pre class="qml">include($DOCSTYLE_DIR/doc-style-basics.qdocconf)
+
+outputformats = HTML
+outputdir = html
+
+exampledirs += manual
+
+sourcedirs += ../src
+
+headerdirs += ../include</pre>
+</div>
+<!-- @@@getting-started-004.html -->
+<p class="naviNextPrevious footerNavi">
+<a class="prevPage" href="getting-started-003.html">Add Index Page</a>
+<a class="nextPage" href="getting-started-005.html">Add HTML Style</a>
+</p>
+
+<!-- FOOTER -->
+    </div> <!-- content-root -->
+    <div class='col-lg-3 col-md-2 sidebar-root'>
+    </div> <!-- sidebar-root -->
+  </div> <!-- row -->
+</div> <!-- container-fluid -->
+
+<footer class='footer'>
+  <div class='container'>
+    <center>
+      <p class='text-muted'>
+        &copy; Robert Hildebrandt  2015
+        <br>
+        Documentation generated using the <a href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using <a href='http://jquery.com/'>jQuery</a>
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using the <a href='http://getbootstrap.com/'>Bootstrap</a> framework.
+      </p>
+    </center>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+</body>
+</html>

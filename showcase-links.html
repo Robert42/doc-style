@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- showcase-links.qdoc -->
+  <title>Showcase Links | doc-style </title>
+<link rel='stylesheet' href='./style/doc-style.css'>
+<link rel='stylesheet' href='./style/bootstrap.css'>
+<link rel='stylesheet' href='./style/sticky-footer.css'>
+<link rel='stylesheet' href='./style/code-style.css'>
+<script src='./scripts/jquery-1.11.3.min.js'></script>
+<script src='./scripts/doc-style.js'></script>
+<script src='./scripts/bootstrap.js'></script>
+<script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body>
+
+<!-- POSTHEADER -->
+
+<nav class='navbar navbar-default navbar-static-top'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <a class='navbar-brand' href='index.html'>Welcome</a>
+    </div>
+    <ul class='nav navbar-nav'>
+      <li><a href='https://github.com/Robert42/doc-style'>GitHub Page</a></li>
+      <li><a href='showcase.html'>Showcase</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-lg-9 col-md-10 content-root'>
+<!-- END POSTHEADER -->
+
+<li>Showcase Links</li>
+  <link rel="prev" href="showcase-source-code.html" />
+  <link rel="next" href="showcase-text-sections.html" />
+<p class="naviNextPrevious headerNavi">
+<a class="prevPage" href="showcase-source-code.html">Show Code Formating</a>
+<a class="nextPage" href="showcase-text-sections.html">Show Text Sections</a>
+</p><p/>
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#externalpage">\externalpage</a></li>
+<li class="level1"><a href="#keyword">\keyword</a></li>
+<li class="level1"><a href="#links-to-other-docuemtation">Links to other docuemtation.</a></li>
+<li class="level1"><a href="#links-from-code">Links from Code</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">Showcase Links</h1>
+<span class="subtitle"></span>
+<!-- $$$showcase-links.html-description -->
+<div class="descr"> <a name="details"></a>
+<a name="externalpage"></a>
+<h2 id="externalpage">\externalpage</h2>
+<p>The <code>\externalpage</code> command makes it easy to link to external pages, like for example the <a href="http://doc.qt.io/qt-5/27-qdoc-commands-alphabetical.html">QDoc Command Index</a>.</p>
+<a name="keyword"></a>
+<h2 id="keyword">\keyword</h2>
+<p>Here is a link to the <a href="showcase-text-formating.html#including-math">Math page</a>. The link follows to the keyword defined on the target page.</p>
+<a name="links-to-other-docuemtation"></a>
+<h2 id="links-to-other-docuemtation">Links to other docuemtation.</h2>
+<p>For example, here's a link to the <a href="http://doc.qt.io/qt-5/qtextencoder.html">QTextEncoder</a> class of the Qt documentation.</p>
+<p>This is achieved by adding the qtcore.index file from the qt sdk to the <a href="http://doc.qt.io/qt-5/25-qdoc-configuration-derivedprojects.html#indexes">indexes configuration</a> variable</p>
+<a name="links-from-code"></a>
+<h2 id="links-from-code">Links from Code</h2>
+<pre class="cpp"><span class="keyword">class</span> MyClass : <span class="keyword">public</span> <span class="type"><a href="http://doc.qt.io/qt-5/qobject.html">QObject</a></span>
+{
+Q_OBJECT
+<span class="keyword">public</span>:
+  <span class="type"><a href="http://doc.qt.io/qt-5/qtextencoder.html">QTextEncoder</a></span> te;
+  A<span class="operator">::</span>Extreme extreme;
+  Extreme extreme2;
+
+  MyClass()
+  {
+    lookAFriend();
+  }
+};</pre>
+<pre class="cpp"><span class="comment">/*! \page showcase-links.html
+\ingroup showcase
+
+\title Showcase Links
+
+\previouspage Show Code Formating
+\nextpage Show Text Sections
+
+\section1 \\externalpage
+
+The \c\externalpage command makes it easy to link to external pages, like for example the \l{QDoc Command Index}.
+
+\section1 \\keyword
+
+Here is a link to the \l{including math}{Math page}. The link follows to the keyword defined on the target page.
+
+\section1 Links to other docuemtation.
+
+For example, here's a link to the QTextEncoder class of the Qt documentation.
+
+This is achieved by adding the qtcore.index file from the qt sdk to the
+\l{http://doc.qt.io/qt-5/25-qdoc-configuration-derivedprojects.html#indexes}{indexes configuration} variable
+
+\section1 Links from Code
+
+\snippet showcase/cpp/code.cpp 0
+
+\quotefile showcase/showcase-links.qdoc
+
+*/</span>
+
+<span class="comment">/*! \externalpage http://doc.qt.io/qt-5/27-qdoc-commands-alphabetical.html
+
+\title QDoc Command Index
+*/</span></pre>
+</div>
+<!-- @@@showcase-links.html -->
+<p class="naviNextPrevious footerNavi">
+<a class="prevPage" href="showcase-source-code.html">Show Code Formating</a>
+<a class="nextPage" href="showcase-text-sections.html">Show Text Sections</a>
+</p>
+
+<!-- FOOTER -->
+    </div> <!-- content-root -->
+    <div class='col-lg-3 col-md-2 sidebar-root'>
+    </div> <!-- sidebar-root -->
+  </div> <!-- row -->
+</div> <!-- container-fluid -->
+
+<footer class='footer'>
+  <div class='container'>
+    <center>
+      <p class='text-muted'>
+        &copy; Robert Hildebrandt  2015
+        <br>
+        Documentation generated using the <a href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using <a href='http://jquery.com/'>jQuery</a>
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using the <a href='http://getbootstrap.com/'>Bootstrap</a> framework.
+      </p>
+    </center>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+</body>
+</html>

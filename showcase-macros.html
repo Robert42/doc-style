@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- showcase-macro.qdoc -->
+  <title>Showcase Macros | doc-style </title>
+<link rel='stylesheet' href='./style/doc-style.css'>
+<link rel='stylesheet' href='./style/bootstrap.css'>
+<link rel='stylesheet' href='./style/sticky-footer.css'>
+<link rel='stylesheet' href='./style/code-style.css'>
+<script src='./scripts/jquery-1.11.3.min.js'></script>
+<script src='./scripts/doc-style.js'></script>
+<script src='./scripts/bootstrap.js'></script>
+<script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body>
+
+<!-- POSTHEADER -->
+
+<nav class='navbar navbar-default navbar-static-top'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <a class='navbar-brand' href='index.html'>Welcome</a>
+    </div>
+    <ul class='nav navbar-nav'>
+      <li><a href='https://github.com/Robert42/doc-style'>GitHub Page</a></li>
+      <li><a href='showcase.html'>Showcase</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-lg-9 col-md-10 content-root'>
+<!-- END POSTHEADER -->
+
+<li>Showcase Macros</li>
+  <link rel="prev" href="showcase.html" />
+  <link rel="next" href="showcase-text-formating.html" />
+<p class="naviNextPrevious headerNavi">
+<a class="prevPage" href="showcase.html">Showcase</a>
+<a class="nextPage" href="showcase-text-formating.html">Show Text Formating</a>
+</p><p/>
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#shortcut-key">\shortcut &amp; \key</a></li>
+<li class="level1"><a href="#math-mathline">\math &amp; \mathline</a></li>
+<li class="level1"><a href="#mark">\mark</a></li>
+<li class="level1"><a href="#s">\s</a></li>
+<li class="level1"><a href="#del">\del</a></li>
+<li class="level1"><a href="#ins">\ins</a></li>
+<li class="level1"><a href="#abbr">\abbr</a></li>
+<li class="level1"><a href="#space">\space</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">Showcase Macros</h1>
+<span class="subtitle">New functionality added by this style</span>
+<!-- $$$showcase-macros-description -->
+<div class="descr"> <a name="details"></a>
+<p>The qdocconf files provided by this qdoc-style also provide some macros.</p>
+<a name="shortcut-key"></a>
+<h2 id="shortcut-key">\shortcut &amp; \key</h2>
+<p><code>\shortcut{\key{some-key}}</code> will display some text as a shortcut <kbd><kbd>some-key</kbd></kbd>.</p>
+<p>For example <code>\shortcut{\key{Ctrl}+\key{Shift}+\key{C}}</code> is displayed as <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd></kbd></p>
+<a name="math-mathline"></a>
+<h2 id="math-mathline">\math &amp; \mathline</h2>
+<p>You can use math formular, like <code>\math{42\cdot x^3 + \frac{\sqrt{t}}{2^n}}</code> for a result like \(42\cdot x^3 + \frac{\sqrt{t}}{2^n}\)</p>
+<a name="mark"></a>
+<h2 id="mark">\mark</h2>
+<p>Mark some text,as if it was marked with a <mark>textmarker</mark>.</p>
+<a name="s"></a>
+<h2 id="s">\s</h2>
+<p>Draw some text as <s>striked through</s>.</p>
+<a name="del"></a>
+<h2 id="del">\del</h2>
+<p>Draw some text as <s>deleted</s>. The difference to <code>\s</code> is, that one css style might tint deleted text red while a simple stroke though text will not changing the color of the text.</p>
+<a name="ins"></a>
+<h2 id="ins">\ins</h2>
+<p>Draw some text as <ins>inserted</ins>. The difference to smiply underlined text is, that one css style might tint inserted text green while a simple underlined though text will not changing the color of the text.</p>
+<a name="abbr"></a>
+<h2 id="abbr">\abbr</h2>
+<p>Abbreviations are also easy to handle. so the user can known the difference between a <abbr title='KÃ¼nstliches Neuronales Netz'>KNN</abbr> and a <abbr title='K Nearest Neighbor'>KNN</abbr></p>
+<a name="space"></a>
+<h2 id="space">\space</h2>
+<p><code>\space</code> just outputs a single whitespace character. Usecase:</p>
+<pre class="qml">Without \c\space
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+\snippet showcase/cpp/snippetexample2.cpp Snippet B
+
+With \c\space
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+\space
+\snippet showcase/cpp/snippetexample2.cpp Snippet B</pre>
+<p>will produce</p>
+<p>Without <code>\space</code></p>
+<pre class="cpp"><span class="type">void</span> snippetA()
+{
+  <span class="comment">// do something</span>
+}
+<span class="type">void</span> snippetB()
+{
+  <span class="comment">// do something</span>
+}</pre>
+<p>With <code>\space</code></p>
+<pre class="cpp"><span class="type">void</span> snippetA()
+{
+  <span class="comment">// do something</span>
+}</pre>
+ <pre class="cpp"><span class="type">void</span> snippetB()
+{
+  <span class="comment">// do something</span>
+}</pre>
+</div>
+<!-- @@@showcase-macros -->
+<p class="naviNextPrevious footerNavi">
+<a class="prevPage" href="showcase.html">Showcase</a>
+<a class="nextPage" href="showcase-text-formating.html">Show Text Formating</a>
+</p>
+
+<!-- FOOTER -->
+    </div> <!-- content-root -->
+    <div class='col-lg-3 col-md-2 sidebar-root'>
+    </div> <!-- sidebar-root -->
+  </div> <!-- row -->
+</div> <!-- container-fluid -->
+
+<footer class='footer'>
+  <div class='container'>
+    <center>
+      <p class='text-muted'>
+        &copy; Robert Hildebrandt  2015
+        <br>
+        Documentation generated using the <a href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using <a href='http://jquery.com/'>jQuery</a>
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using the <a href='http://getbootstrap.com/'>Bootstrap</a> framework.
+      </p>
+    </center>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+</body>
+</html>

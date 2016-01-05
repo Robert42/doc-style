@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- getting-started-003.qdoc -->
+  <title>Add Index Page | doc-style </title>
+<link rel='stylesheet' href='./style/doc-style.css'>
+<link rel='stylesheet' href='./style/bootstrap.css'>
+<link rel='stylesheet' href='./style/sticky-footer.css'>
+<link rel='stylesheet' href='./style/code-style.css'>
+<script src='./scripts/jquery-1.11.3.min.js'></script>
+<script src='./scripts/doc-style.js'></script>
+<script src='./scripts/bootstrap.js'></script>
+<script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body>
+
+<!-- POSTHEADER -->
+
+<nav class='navbar navbar-default navbar-static-top'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <a class='navbar-brand' href='index.html'>Welcome</a>
+    </div>
+    <ul class='nav navbar-nav'>
+      <li><a href='https://github.com/Robert42/doc-style'>GitHub Page</a></li>
+      <li><a href='showcase.html'>Showcase</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-lg-9 col-md-10 content-root'>
+<!-- END POSTHEADER -->
+
+<li>Add Index Page</li>
+  <link rel="prev" href="getting-started-002.html" />
+  <link rel="next" href="getting-started-004.html" />
+  <link rel="start" href="getting-started.html" />
+<p class="naviNextPrevious headerNavi">
+<a class="prevPage" href="getting-started-002.html">Add C++ Docu</a>
+<a class="nextPage" href="getting-started-004.html">Add QDoc Config</a>
+</p><p/>
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#update-directory-structure">Update directory structure.</a></li>
+<li class="level1"><a href="#add-qdoc-file">Add *.qdoc file</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">Add Index Page</h1>
+<span class="subtitle"></span>
+<!-- $$$getting-started-003.html-description -->
+<div class="descr"> <a name="details"></a>
+<a name="update-directory-structure"></a>
+<h2 id="update-directory-structure">Update directory structure.</h2>
+<ol class="1">
+<li>If your project root directory is not already your current workig directory, make sure it is.<pre class="cpp">cd example<span class="operator">-</span>project</pre>
+</li>
+<li>Create a directory for the documentation itself<pre class="cpp">mkdir doc
+cd doc
+mkdir manual</pre>
+</li>
+</ol>
+<a name="add-qdoc-file"></a>
+<h2 id="add-qdoc-file">Add *.qdoc file</h2>
+<p>Create the qdoc file <b>doc/manual/landing-page.qdoc</b></p>
+<pre class="cpp"><span class="comment">/*! \page index.html
+
+\title Welcome
+
+Welcome to this simple minimalistic example.
+
+\generatelist classes
+*/</span></pre>
+<p>Note that the title will be normally used as part of the style. With one esception: If the filename is index.html, q jQuery script of doc-style is going to remove the title from the html page to make it more easy to customize the first page.</p>
+</div>
+<!-- @@@getting-started-003.html -->
+<p class="naviNextPrevious footerNavi">
+<a class="prevPage" href="getting-started-002.html">Add C++ Docu</a>
+<a class="nextPage" href="getting-started-004.html">Add QDoc Config</a>
+</p>
+
+<!-- FOOTER -->
+    </div> <!-- content-root -->
+    <div class='col-lg-3 col-md-2 sidebar-root'>
+    </div> <!-- sidebar-root -->
+  </div> <!-- row -->
+</div> <!-- container-fluid -->
+
+<footer class='footer'>
+  <div class='container'>
+    <center>
+      <p class='text-muted'>
+        &copy; Robert Hildebrandt  2015
+        <br>
+        Documentation generated using the <a href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using <a href='http://jquery.com/'>jQuery</a>
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using the <a href='http://getbootstrap.com/'>Bootstrap</a> framework.
+      </p>
+    </center>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+</body>
+</html>

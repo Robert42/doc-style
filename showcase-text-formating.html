@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- showcase-text-formating.qdoc -->
+  <title>Show Text Formating | doc-style </title>
+<link rel='stylesheet' href='./style/doc-style.css'>
+<link rel='stylesheet' href='./style/bootstrap.css'>
+<link rel='stylesheet' href='./style/sticky-footer.css'>
+<link rel='stylesheet' href='./style/code-style.css'>
+<script src='./scripts/jquery-1.11.3.min.js'></script>
+<script src='./scripts/doc-style.js'></script>
+<script src='./scripts/bootstrap.js'></script>
+<script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body>
+
+<!-- POSTHEADER -->
+
+<nav class='navbar navbar-default navbar-static-top'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <a class='navbar-brand' href='index.html'>Welcome</a>
+    </div>
+    <ul class='nav navbar-nav'>
+      <li><a href='https://github.com/Robert42/doc-style'>GitHub Page</a></li>
+      <li><a href='showcase.html'>Showcase</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-lg-9 col-md-10 content-root'>
+<!-- END POSTHEADER -->
+
+<li>Show Text Formating</li>
+  <link rel="prev" href="showcase-macros.html" />
+  <link rel="next" href="showcase-source-code.html" />
+<p class="naviNextPrevious headerNavi">
+<a class="prevPage" href="showcase-macros.html">Showcase Macros</a>
+<a class="nextPage" href="showcase-source-code.html">Show Code Formating</a>
+</p><p/>
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#1-general-text-formatting">1. General Text formatting</a></li>
+<li class="level1"><a href="#2-programmer-specific-formatting">2. Programmer specific formatting</a></li>
+<li class="level2"><a href="#2-1-keyboard-shortcuts">2.1 Keyboard Shortcuts</a></li>
+<li class="level2"><a href="#2-2-math">2.2 Math</a></li>
+<li class="level1"><a href="#3-miscellaneous">3. Miscellaneous</a></li>
+<li class="level2"><a href="#4-1-images">4.1 Images</a></li>
+<li class="level2"><a href="#4-2-html">4.2 HTML</a></li>
+<li class="level3"><a href="#4-2-1-div">4.2&#x2e;1 \div</a></li>
+<li class="level2"><a href="#4-3-tables">4.3 Tables</a></li>
+<li class="level2"><a href="#4-4-quotes">4.4 Quotes</a></li>
+<li class="level1"><a href="#source">Source</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<a name="including-math"></a><h1 class="title">Show Text Formating</h1>
+<span class="subtitle"></span>
+<!-- $$$showcase-text-formating.html-description -->
+<div class="descr"> <a name="details"></a>
+<a name="1-general-text-formatting"></a>
+<h2 id="1-general-text-formatting">1. General Text formatting</h2>
+<p>This page shows, some text formatting features.</p>
+<p>As you would expect, making single words <b>bold</b> or <b>multiple words</b> is quite easy to to. Same for <i>emphasizing</i> single words or <i>multiple words</i>. <br />
+ Use \tt for <code>monospace</code> fonts. <br />
+ Use \br for linebreaks.</p>
+<p>You can also <u>underline</u> text or mark <ins>some text as inserted</ins>. Yes those are different things. For example one css style might tint inserted text green while not changing the color of a simple underlined though text.</p>
+<p>Text descripting an <b>ui element</b> is drawn bold.</p>
+<p>You can <mark>highlight some text</mark> like you have used a textmarker.</p>
+<p>Also you can mark <del>some text as deleted</del> or strike <s>some text through</s>. Yes those are different things. For example one css style might tint deleted text red while not changing the color of a simple stroke though text.</p>
+<p>Abbreviations are also easy to handle. so the user can known the difference between a <abbr title='KÃ¼nstliches Neuronales Netz'>KNN</abbr> and a <abbr title='K Nearest Neighbor'>KNN</abbr></p>
+<a name="2-programmer-specific-formatting"></a>
+<h2 id="2-programmer-specific-formatting">2. Programmer specific formatting</h2>
+<a name="2-1-keyboard-shortcuts"></a>
+<h3 >2.1 Keyboard Shortcuts</h3>
+<p>If you want to highlight a part of your documentation as a keyboard shortcut, you can use the commands</p>
+<ul>
+<li><code>\shortcut</code></li>
+<li><code>\key</code></li>
+</ul>
+<p>Use <code>\shortcut{\key{some-key}}</code> for shortcuts consisting of only one key. For example <kbd><kbd>Escape</kbd></kbd>. <br />
+ Use <code>\shortcut{\key{first-key}+\key{second-key}+..&#x2e;+\key{last-key}}</code> if your Shortcut consists of multiple keys. For example the well known shortcut for copying content to the clipboard: <kbd><kbd>Ctrl</kbd>+<kbd>c</kbd></kbd>. <br />
+ Another example with three keys: <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd></kbd>.</p>
+<a name="2-2-math"></a>
+<h3 >2.2 Math</h3>
+<p>Mathjax is integrated. Inline formulas \(y^2&gt;2\cdot x^{\sqrt4}\) are supported.</p>
+\[\int_{x=0}^{42} x\;dx \ne \sum_{i=1}^{n} \frac{1}{\sqrt{i}}\]<p><b>Note: </b>You don't have to worry about html special html characters, because qdoc will escape the special html characters like <code>&lt;</code>, or <code>&gt;</code>. So for example the qdoc code <code>\math{a&lt;b&gt;c&lt;/b&gt;c}</code> will result in the following formula: \(a&lt;b&gt;c&lt;/b&gt;c\). <br />
+ Instead you have to use double backslashes if you are using the <code>$$ ..&#x2e; $$</code>, <code>\[ ..&#x2e; \]</code> or <code>\( ..&#x2e; \)</code> command directly. For example you need to type in <code>$$\\sqrt{n}$$</code> to get $$\sqrt{n}$$</p><a name="3-miscellaneous"></a>
+<h2 id="3-miscellaneous">3. Miscellaneous</h2>
+<a name="4-1-images"></a>
+<h3 >4.1 Images</h3>
+<p class="centerAlign"><img src="images/cat.jpg" alt="Look, a cat! :D" /></p><p class="figCaption">I have downloaded this image from <a href="https://pixabay.com/en/cat-silhouette-cats-silhouette-694730/">pixabay.com</a></p>
+<p>Inline images <img src="images/cat.jpg" alt="Look, a cat! :)" /> are possible.</p>
+<a name="4-2-html"></a>
+<h3 >4.2 HTML</h3>
+<a name="4-2-1-div"></a>
+<h4 >4.2&#x2e;1 \div</h4>
+<p>You can easily add div sections to the html output easily.</p>
+<p>For example, the following commands</p>
+<pre class="qml">\div{class=&quot;alert alert-success&quot;}
+\b Yay, successfully demonstration of the \\div command :D
+\enddiv</pre>
+<p>will result in</p>
+<div class="alert alert-success"><p><b>Yay</b>, successfully demonstration of the \div command :D</p>
+</div><a name="4-3-tables"></a>
+<h3 >4.3 Tables</h3>
+<div class="table"><table class="generic">
+ <thead><tr class="qt-style"><th >A</th><th >B</th></tr></thead>
+<tr valign="top" class="odd"><td >a b c</td><td >defg</td></tr>
+<thead><tr class="qt-style"><th >C</th><th >D</th></tr></thead>
+<tr valign="top" class="even"><td >h i j</td><td >k l m</td></tr>
+<tr valign="top" class="odd"><td >o p q</td><td >r s t u</td></tr>
+<tr valign="top" class="even"><td >v</td><td >xw</td></tr>
+<tr valign="top" class="odd"><td  colspan="2">x y z</td></tr>
+<tr valign="top" class="even"><td  rowspan="2">two rows</td><td >a</td></tr>
+<tr valign="top" class="odd"><td >b</td></tr>
+</table></div>
+<a name="4-4-quotes"></a>
+<h3 >4.4 Quotes</h3>
+<p>Some Text before the quotation.</p>
+<blockquote><p>This is a quote. This is a quote. This is a quote. This is a quote. This is a quote.</p>
+</blockquote>
+<p>Some Text after the quotation.</p>
+<a name="source"></a>
+<h2 id="source">Source</h2>
+<p>This is the source for the current page:</p>
+<pre class="cpp"><span class="comment">/*! \page showcase-text-formating.html
+\ingroup showcase
+
+\title Show Text Formating
+
+\brief Different Text Formatting. Also Math Formulas and Images.
+
+\previouspage Showcase Macros
+\nextpage Show Code Formating
+
+\section1 1. General Text formatting
+
+This page shows, some text formatting features.
+
+As you would expect, making single words \b bold or \b{multiple words} is quite
+easy to to. Same for \e emphasizing single words or \e{multiple words}.
+\br
+Use \\tt for \tt{monospace} fonts.
+\br
+Use \\br for linebreaks.
+
+You can also \underline{underline} text or mark \ins{some text as inserted}. Yes those are different things. For example one css style might tint inserted text green while not changing the color of a simple underlined though text.
+
+Text descripting an \uicontrol{ui element} is drawn bold.
+
+You can \mark{highlight some text} like you have used a textmarker.
+
+Also you can mark \del{some text as deleted} or strike \s{some text through}. Yes those are different things. For example one css style might tint deleted text red while not changing the color of a simple stroke though text.
+
+Abbreviations are also easy to handle. so the user can known the difference between a \abbr{Künstliches Neuronales Netz}{KNN} and a \abbr{K Nearest Neighbor}{KNN}
+
+\section1 2. Programmer specific formatting
+
+\section2 2.1 Keyboard Shortcuts
+If you want to highlight a part of your documentation as a keyboard shortcut, you
+can use the commands
+\list
+\li \c \shortcut
+\li \c \key
+\endlist
+
+Use \c{\shortcut{\key{some-key}}} for shortcuts consisting of only one key. For example \shortcut{\key{Escape}}.
+\br
+Use \c{\shortcut{\key{first-key}+\key{second-key}+...+\key{last-key}}} if your Shortcut consists of multiple keys. For example the well known shortcut for copying
+content to the clipboard: \shortcut{\key{Ctrl}+\key{c}}.
+\br
+Another example with three keys: \shortcut{\key{Ctrl}+\key{Shift}+\key{P}}.
+
+\section2 2.2 Math
+
+\keyword including math
+
+Mathjax is integrated. Inline formulas \math{y^2&gt;2\cdot x^{\sqrt4}} are supported.
+
+\mathline{\int_{x=0}^{42} x\;dx \ne \sum_{i=1}^{n} \frac{1}{\sqrt{i}}}
+
+\note You don't have to worry about html special html characters, because qdoc will escape
+the special html characters like \c{&lt;}, or \c{&gt;}. So for example the qdoc code
+\c{\math{a&lt;b&gt;c&lt;/b&gt;c}} will result in the following formula: \math{a&lt;b&gt;c&lt;/b&gt;c}.
+\br
+Instead you have to use double backslashes if you are using the
+\c{$$ ... $$}, \c{\[ ... \]} or \c{\( ... \)} command directly. For example you need to
+type in \c$$\\sqrt{n}$$ to get $$\\sqrt{n}$$
+
+\section1 3. Miscellaneous
+
+\section2 4.1 Images
+
+\image qdoc/showcase/images/cat.jpg Look, a cat! :D
+\caption I have downloaded this image from \l{https://pixabay.com/en/cat-silhouette-cats-silhouette-694730/}{pixabay.com}
+
+Inline images \inlineimage qdoc/showcase/images/cat.jpg Look, a cat! :)
+are possible.
+
+\section2 4.2 HTML
+
+\section3 4.2.1 \\div
+
+You can easily add div sections to the html output easily.
+
+For example, the following commands
+
+\quotefromfile showcase/showcase-text-formating.qdoc
+\skipuntil \section3 4.2.1 \\div
+\skipuntil will result in
+\printto \section
+
+will result in
+
+\div{class=&quot;alert alert-success&quot;}
+\b Yay, successfully demonstration of the \\div command :D
+\enddiv
+
+\section2 4.3 Tables
+
+\table
+\header
+  \li A
+  \li B
+\row
+  \li a b c
+  \li defg
+\header
+  \li C
+  \li D
+\row
+  \li h i j
+  \li k l m
+\row
+  \li o p q
+  \li r s t u
+\row
+  \li v
+  \li xw
+\row
+  \li{2,1} x y z
+\row
+  \li{1,2} two rows
+  \li a
+\row
+  \li b
+\endtable
+
+\section2 4.4 Quotes
+
+Some Text before the quotation.
+
+\quotation
+This is a quote. This is a quote. This is a quote. This is a quote. This is a quote.
+\endquotation
+
+Some Text after the quotation.
+
+\section1 Source
+
+This is the source for the current page:
+
+\quotefile showcase/showcase-text-formating.qdoc
+
+*/</span></pre>
+</div>
+<!-- @@@showcase-text-formating.html -->
+<p class="naviNextPrevious footerNavi">
+<a class="prevPage" href="showcase-macros.html">Showcase Macros</a>
+<a class="nextPage" href="showcase-source-code.html">Show Code Formating</a>
+</p>
+
+<!-- FOOTER -->
+    </div> <!-- content-root -->
+    <div class='col-lg-3 col-md-2 sidebar-root'>
+    </div> <!-- sidebar-root -->
+  </div> <!-- row -->
+</div> <!-- container-fluid -->
+
+<footer class='footer'>
+  <div class='container'>
+    <center>
+      <p class='text-muted'>
+        &copy; Robert Hildebrandt  2015
+        <br>
+        Documentation generated using the <a href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using <a href='http://jquery.com/'>jQuery</a>
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using the <a href='http://getbootstrap.com/'>Bootstrap</a> framework.
+      </p>
+    </center>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+</body>
+</html>

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- showcase-source-code.qdoc -->
+  <title>Show Code Formating | doc-style </title>
+<link rel='stylesheet' href='./style/doc-style.css'>
+<link rel='stylesheet' href='./style/bootstrap.css'>
+<link rel='stylesheet' href='./style/sticky-footer.css'>
+<link rel='stylesheet' href='./style/code-style.css'>
+<script src='./scripts/jquery-1.11.3.min.js'></script>
+<script src='./scripts/doc-style.js'></script>
+<script src='./scripts/bootstrap.js'></script>
+<script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body>
+
+<!-- POSTHEADER -->
+
+<nav class='navbar navbar-default navbar-static-top'>
+  <div class='container-fluid'>
+    <div class='navbar-header'>
+      <a class='navbar-brand' href='index.html'>Welcome</a>
+    </div>
+    <ul class='nav navbar-nav'>
+      <li><a href='https://github.com/Robert42/doc-style'>GitHub Page</a></li>
+      <li><a href='showcase.html'>Showcase</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class='container'>
+  <div class='row'>
+    <div class='col-lg-9 col-md-10 content-root'>
+<!-- END POSTHEADER -->
+
+<li>Show Code Formating</li>
+  <link rel="prev" href="showcase-text-formating.html" />
+  <link rel="next" href="showcase-links.html" />
+<p class="naviNextPrevious headerNavi">
+<a class="prevPage" href="showcase-text-formating.html">Show Text Formating</a>
+<a class="nextPage" href="showcase-links.html">Showcase Links</a>
+</p><p/>
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#code-endcode">\code &amp; \endcode</a></li>
+<li class="level1"><a href="#quotefromfile">\quotefromfile</a></li>
+<li class="level2"><a href="#skipto-printto">\skipto &amp; \printto</a></li>
+<li class="level2"><a href="#skipuntil-printuntil">\skipuntil &amp; \printuntil</a></li>
+<li class="level2"><a href="#skipline-printline">\skipline &amp; \printline</a></li>
+<li class="level2"><a href="#codeline">\codeline</a></li>
+<li class="level2"><a href="#dots">\dots</a></li>
+<li class="level2"><a href="#mixing-with-text">Mixing with text</a></li>
+<li class="level1"><a href="#snippet">\snippet</a></li>
+<li class="level1"><a href="#space">\space</a></li>
+<li class="level1"><a href="#oldcode-newcodecode">\oldcode &amp; \newcodecode</a></li>
+<li class="level1"><a href="#quotefile">\quotefile</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">Show Code Formating</h1>
+<span class="subtitle"></span>
+<!-- $$$showcase-source-code.html-description -->
+<div class="descr"> <a name="details"></a>
+<a name="code-endcode"></a>
+<h2 id="code-endcode">\code &amp; \endcode</h2>
+<p>You can highlight code as source code using <code>\c{..&#x2e;}</code>: This is <code>some code</code>.</p>
+<p>Use <code>\code</code> and <code>\endcode</code> for showing a block of code:</p>
+<p>The collowing qdoc commands</p>
+<pre class="qml">\code
+#include &lt;some-header.h&gt;
+while(true)
+{
+  doSomething(42, &quot;Hehe&quot;); // Just a line of code
+}
+\endcode</pre>
+<p>will produce</p>
+<pre class="cpp"><span class="preprocessor">#include &lt;some-header.h&gt;</span>
+<span class="keyword">while</span>(<span class="keyword">true</span>)
+{
+  doSomething(<span class="number">42</span><span class="operator">,</span> <span class="string">&quot;Hehe&quot;</span>); <span class="comment">// Just a line of code</span>
+}</pre>
+<a name="quotefromfile"></a>
+<h2 id="quotefromfile">\quotefromfile</h2>
+<a name="skipto-printto"></a>
+<h3 >\skipto &amp; \printto</h3>
+<p>Skips/prints to (excluding) a line.</p>
+<p>The collowing qdoc commands</p>
+<pre class="qml">\quotefromfile showcase/tiere.txt
+\skipto Katze
+\printto Pinguin</pre>
+<p>will produce</p>
+<pre class="qml">Katze
+Leopard
+Maus
+Nilpferd
+Orang Utan</pre>
+<a name="skipuntil-printuntil"></a>
+<h3 >\skipuntil &amp; \printuntil</h3>
+<p>Skips/prints to (including) a line.</p>
+<p>The collowing qdoc commands</p>
+<pre class="qml">\quotefromfile showcase/tiere.txt
+\skipuntil Katze
+\printuntil Pinguin</pre>
+<p>will produce</p>
+<pre class="qml">Leopard
+Maus
+Nilpferd
+Orang Utan
+Pinguin</pre>
+<a name="skipline-printline"></a>
+<h3 >\skipline &amp; \printline</h3>
+<p><code>\printline</code> and <code>\skipline</code> print the next line. The argument is only used to ensure, that the right line is printed. If the Next line is different to the given argument, the command will fail. <br />
+ For example, if you would replace in the following example <code>\printline Chinchilla</code> with <code>\printline Dachs</code> an error would be printed, because Dachs is not the next line, but Chinchilla is.</p>
+<p>The collowing qdoc commands</p>
+<pre class="qml">\quotefromfile showcase/tiere.txt
+\skipto Ameise
+\printline Ameise
+\skipline Bieber
+\printline Chinchilla</pre>
+<p>will produce</p>
+<pre class="qml">Ameise
+Chinchilla</pre>
+<a name="codeline"></a>
+<h3 >\codeline</h3>
+<p>Connect different codeblocks</p>
+<p>The collowing qdoc commands</p>
+<pre class="qml">\quotefromfile showcase/tiere.txt
+\skipto Jaguar
+\printline Jaguar
+\codeline
+\printline Katze</pre>
+<p>will produce</p>
+<pre class="qml">Jaguar
+
+Katze</pre>
+<a name="dots"></a>
+<h3 >\dots</h3>
+<p>The collowing qdoc commands</p>
+<pre class="qml">\quotefromfile showcase/tiere.txt
+\skipto Ameise
+\printline Ameise
+\dots
+\skipto Zebra
+\printline Zebra</pre>
+<p>will produce</p>
+<pre class="qml">Ameise
+    ...
+Zebra</pre>
+<a name="mixing-with-text"></a>
+<h3 >Mixing with text</h3>
+<p>The collowing qdoc commands</p>
+<pre class="qml">\quotefromfile showcase/tiere.txt
+\skipto Jaguar
+
+This are three cat species
+
+\printuntil Leopard
+
+Ah, another mammal
+
+\printuntil Maus
+
+Wow there's another one:
+
+\printline Nilpferd
+
+And followed by another one
+
+\printuntil Orang Utan</pre>
+<p>will produce</p>
+<p>This are three cat species</p>
+<pre class="qml">Jaguar
+Katze
+Leopard</pre>
+<p>Ah, another mammal</p>
+<pre class="qml">Maus</pre>
+<p>Wow there's another one:</p>
+<pre class="qml">Nilpferd</pre>
+<p>And followed by another one</p>
+<pre class="qml">Orang Utan</pre>
+<a name="snippet"></a>
+<h2 id="snippet">\snippet</h2>
+<p>The collowing qdoc commands</p>
+<pre class="qml">\snippet showcase/cpp/snippetexample1.cpp Snippet A</pre>
+<p>will produce</p>
+<pre class="cpp"><span class="type">void</span> snippetA()
+{
+  <span class="comment">// do something</span>
+}</pre>
+<a name="space"></a>
+<h2 id="space">\space</h2>
+<p>This macro allows seperating codeblocks</p>
+<pre class="qml">Without \c\space
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+\snippet showcase/cpp/snippetexample2.cpp Snippet B
+
+With \c\space
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+\space
+\snippet showcase/cpp/snippetexample2.cpp Snippet B</pre>
+<p>will produce</p>
+<p>Without <code>\space</code></p>
+<pre class="cpp"><span class="type">void</span> snippetA()
+{
+  <span class="comment">// do something</span>
+}
+<span class="type">void</span> snippetB()
+{
+  <span class="comment">// do something</span>
+}</pre>
+<p>With <code>\space</code></p>
+<pre class="cpp"><span class="type">void</span> snippetA()
+{
+  <span class="comment">// do something</span>
+}</pre>
+ <pre class="cpp"><span class="type">void</span> snippetB()
+{
+  <span class="comment">// do something</span>
+}</pre>
+<a name="oldcode-newcodecode"></a>
+<h2 id="oldcode-newcodecode">\oldcode &amp; \newcodecode</h2>
+<pre class="qml">\oldcode
+    std::cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; std::endl;
+\newcode
+    std::cout &lt;&lt; &quot;Hello Universe! :)&quot; &lt;&lt; std::endl;
+\endcode</pre>
+<p>will produce:</p>
+<p>For example, if you have code like</p>
+<pre class="cpp">    std::cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; std::endl;</pre>
+<p>you can rewrite it as</p>
+<pre class="cpp">    std<span class="operator">::</span>cout <span class="operator">&lt;</span><span class="operator">&lt;</span> <span class="string">&quot;Hello Universe! :)&quot;</span> <span class="operator">&lt;</span><span class="operator">&lt;</span> std<span class="operator">::</span>endl;</pre>
+<a name="quotefile"></a>
+<h2 id="quotefile">\quotefile</h2>
+<p>You can use <code>\quotefile</code> to show the content of a file. For example, this is the source for the current page:</p>
+<pre class="cpp"><span class="comment">/*! \page showcase-source-code.html
+\ingroup showcase
+
+\title Show Code Formating
+
+\brief Include Code into the Documentation
+
+\previouspage Show Text Formating
+\nextpage Showcase Links
+
+\section1 \\code &amp; \\endcode
+
+You can highlight code as source code using \c{\c{...}}: This is \c{some code}.
+
+Use \c\code and \c\endcode for showing a block of code:
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil will produce
+\printuntil \endcode
+
+will produce
+
+\code
+#include &lt;some-header.h&gt;
+while(true)
+{
+  doSomething(42, &quot;Hehe&quot;); // Just a line of code
+}
+\endcode
+
+\section1 \\quotefromfile
+
+\section2 \\skipto &amp; \\printto
+
+Skips/prints to (excluding) a line.
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\skipto &amp; \\printto
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\quotefromfile showcase/tiere.txt
+\skipto Katze
+\printto Pinguin
+
+\section2 \\skipuntil &amp; \\printuntil
+
+Skips/prints to (including) a line.
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\skipuntil &amp; \\printuntil
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\quotefromfile showcase/tiere.txt
+\skipuntil Katze
+\printuntil Pinguin
+
+\section2 \\skipline &amp; \\printline
+
+\c\printline and \c\skipline print the next line. The argument is only used to
+ensure, that the right line is printed. If the Next line is different to the
+given argument, the command will fail.
+\br
+For example, if you would replace in the following example
+\c{\printline Chinchilla} with  \c{\printline Dachs} an error would be printed,
+because Dachs is not the next line, but Chinchilla is.
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\skipline &amp; \\printline
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\quotefromfile showcase/tiere.txt
+\skipto Ameise
+\printline Ameise
+\skipline Bieber
+\printline Chinchilla
+
+\section2 \\codeline
+
+Connect different codeblocks
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\codeline
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\quotefromfile showcase/tiere.txt
+\skipto Jaguar
+\printline Jaguar
+\codeline
+\printline Katze
+
+\section2 \\dots
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\dots
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\quotefromfile showcase/tiere.txt
+\skipto Ameise
+\printline Ameise
+\dots
+\skipto Zebra
+\printline Zebra
+
+\section2 Mixing with text
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 Mixing with textl
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\quotefromfile showcase/tiere.txt
+\skipto Jaguar
+
+This are three cat species
+
+\printuntil Leopard
+
+Ah, another mammal
+
+\printuntil Maus
+
+Wow there's another one:
+
+\printline Nilpferd
+
+And followed by another one
+
+\printuntil Orang Utan
+
+\section1 \\snippet
+
+The collowing qdoc commands
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\snippet
+\skipuntil will produce
+\printto \section
+
+will produce
+
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+
+\section1 \\space
+
+This macro allows seperating codeblocks
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\space
+\skipuntil will produce
+\printto \section
+
+will produce
+
+Without \c\space
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+\snippet showcase/cpp/snippetexample2.cpp Snippet B
+
+With \c\space
+\snippet showcase/cpp/snippetexample1.cpp Snippet A
+\space
+\snippet showcase/cpp/snippetexample2.cpp Snippet B
+
+\section1 \\oldcode &amp; \\newcodecode
+
+\quotefromfile showcase/showcase-source-code.qdoc
+\skipuntil \section2 \\oldcode &amp; \\newcodecode
+\skipuntil will produce
+\printto \section
+
+will produce:
+
+\oldcode
+    std::cout &lt;&lt; &quot;Hello World!&quot; &lt;&lt; std::endl;
+\newcode
+    std::cout &lt;&lt; &quot;Hello Universe! :)&quot; &lt;&lt; std::endl;
+\endcode
+
+\section1 \\quotefile
+
+You can use \c{\quotefile} to show the content of a file.
+For example, this is the source for the current page:
+
+\quotefile showcase/showcase-source-code.qdoc
+
+*/</span></pre>
+</div>
+<!-- @@@showcase-source-code.html -->
+<p class="naviNextPrevious footerNavi">
+<a class="prevPage" href="showcase-text-formating.html">Show Text Formating</a>
+<a class="nextPage" href="showcase-links.html">Showcase Links</a>
+</p>
+
+<!-- FOOTER -->
+    </div> <!-- content-root -->
+    <div class='col-lg-3 col-md-2 sidebar-root'>
+    </div> <!-- sidebar-root -->
+  </div> <!-- row -->
+</div> <!-- container-fluid -->
+
+<footer class='footer'>
+  <div class='container'>
+    <center>
+      <p class='text-muted'>
+        &copy; Robert Hildebrandt  2015
+        <br>
+        Documentation generated using the <a href='http://doc.qt.io/qt-5/qdoc-index.html'>qdoc generator</a>.
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using <a href='http://jquery.com/'>jQuery</a>
+        &nbsp;&nbsp;&nbsp;&mdash;&nbsp;&nbsp;&nbsp;
+        Using the <a href='http://getbootstrap.com/'>Bootstrap</a> framework.
+      </p>
+    </center>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+</body>
+</html>
