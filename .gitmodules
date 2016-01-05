@@ -1,0 +1,4 @@
+[submodule "example/html"]
+	path = example/html
+	url = git@github.com:Robert42/doc-style.git
+	branch = gh-pages
