@@ -15,4 +15,5 @@ imagedirs   += qdoc/getting-started/images
 excludedirs += qdoc/getting-started/example-project
 
 sourcedirs += qdoc/showcase/cpp/src
+sourcedirs += qdoc/showcase/cpp/include
 headerdirs += qdoc/showcase/cpp/include

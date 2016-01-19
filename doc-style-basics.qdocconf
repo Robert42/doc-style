@@ -20,9 +20,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-sources.fileextensions += *.cpp
-sources.fileextensions += *.inl
-headers.fileextensions += *.h
+sources.fileextensions += "*.cpp"
+sources.fileextensions += "*.inl"
+headers.fileextensions += "*.h"
 examples.fileextensions += "*.c"
 examples.fileextensions += "*.cpp"
 examples.fileextensions += "*.h"

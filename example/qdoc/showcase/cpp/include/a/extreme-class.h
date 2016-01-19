@@ -14,6 +14,8 @@ namespace A
     typedef Base ProtectedParent;
     
   public:
+    static_assert(sizeof(Extreme) > 0, "Check, whether qdoc misinterprets static_assert as function");
+  
     typedef Base Parent;
     
     class InnerClass;
@@ -71,6 +73,11 @@ namespace A
     
     Extreme& operator=(const Extreme& other);
     Extreme operator+(const Extreme& other) const;
+    
+    
+  
+  template<typename T>
+  void templateMethod(T argument);
     
   public:
     void abstractBaseMemeberFunction1() override;
@@ -145,3 +152,5 @@ namespace A
 
 A::Extreme someFunctionRelatedToExtreme (A::Extreme a, A::Extreme b);
 void lookAFriend();
+
+#include "extreme-class.inl"

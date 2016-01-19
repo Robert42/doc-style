@@ -51,11 +51,25 @@ But hey, that's the idea of it.
 
 */
 
+namespace /*  dfgdfg */ B
+{
+namespace B2 {}
+namespace B3 {}
+
+int a()
+{
+}
+
+}
+
+namespace B4 {}
+namespace B5 {}
+
 namespace A
 {
 
 
-/*! \namespace A::InnerNamespace
+/*! \namespace InnerNamespace
 \inmodule showcase
 \ingroup cpp-group
 \ingroup cpp-group2
@@ -77,7 +91,7 @@ namespace InnerNamespace
 
 
 /*!
-\typedef A::ThisIsATypedef
+\typedef ThisIsATypedef
 
 \ingroup cpp-group
 
@@ -90,7 +104,7 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 
 
 /*!
-\variable A::thisIsAVariable
+\variable thisIsAVariable
 
 \ingroup cpp-group
 
@@ -102,7 +116,7 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 */
 
 /*!
-\variable A::thisIsAnotherVariable
+\variable thisIsAnotherVariable
 
 \ingroup cpp-group
 
@@ -114,7 +128,7 @@ So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more 
 int thisIsAnotherVariable;
 
 /*!
-\fn std::ostream& A::operator<<(std::ostream& o, const Foo& foo)
+\fn std::ostream& operator<<(std::ostream& o, const Foo& foo)
 
 \ingroup cpp-group
 
@@ -154,7 +168,7 @@ It has two arguments \a a and \a x.
 So yeah, tadaa! Here's some text. I thnk we need a little more text. A lot more text.
 */
 
-/*! \fn T A::globalTemplateFunction(const T& xyz);
+/*! \fn T globalTemplateFunction(const T& xyz);
 
 \ingroup cpp-group
 

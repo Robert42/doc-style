@@ -19,4 +19,6 @@ namespace A
   
   enum GlobalEnum{Hello,World};
   
+  
 }
+

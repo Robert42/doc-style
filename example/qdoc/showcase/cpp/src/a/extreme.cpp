@@ -67,6 +67,8 @@ A::Extreme someFunctionRelatedToExtreme (A::Extreme a, A::Extreme b)
 namespace A
 {
 
+
+
 /*!
  \brief Some other text. To be able to get a feeling for text formating
 
