@@ -297,6 +297,7 @@ function adaptMemberDetails()
   adaptNamespaceTypeMemberDetails("prop");
   adaptNamespaceTypeMemberDetails("macros");
   adaptNamespaceTypeMemberDetails("relnonmem");
+  adaptNamespaceTypeMemberDetails("nmspace");
    
   if(exists("div.content-root > h1.title:contains(Obsolete)"))
     adaptNamespaceTypeMemberDetails("content-root");
