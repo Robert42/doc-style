@@ -9,7 +9,7 @@ def find():
         potential_candidates = []
         for f in os.listdir(d):
             f = path.join(d, f)
-            if os.path.isdir(f) and re.match(r'^Qt[5-9][0-9]*(\.[0-9]+)*$', path.basename(f)):
+            if os.path.isdir(f) and re.match(r'^Qt([5-9][0-9]*(\.[0-9]+)*)?$', path.basename(f)):
                 qt_docs_parent_dir = path.join(f, "Docs")
                 for f in os.listdir(qt_docs_parent_dir):
                     qt_doc_dir = path.join(qt_docs_parent_dir, f)
